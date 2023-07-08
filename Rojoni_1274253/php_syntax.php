@@ -19,6 +19,7 @@
     ?>
     <?=
     "Hello,This is Short Circuit";
+    "Hello,This is Short Circuit";
     ?>
     
 </body>
