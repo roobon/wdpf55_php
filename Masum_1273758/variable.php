@@ -11,7 +11,7 @@
     <?php
     $x = "Hello";
     $y = "Rafiq";
-    echo $x . " " . $y;
+    echo $x . " " . $y; 
     ?>
 </body>
 
