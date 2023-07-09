@@ -122,7 +122,7 @@ echo "<br>";
         echo "<br>";
         var_dump($s);
         echo "<br>";
-        echo gettype($s);
+        
     
         
 
