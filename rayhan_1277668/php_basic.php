@@ -8,19 +8,23 @@
 <body>
     <?php 
         echo "welcome to our journey with PHP" ;
-        echo "welcome to our journey with PHP" ;
+        echo "welcome to our journey with PHP "  ;
+        
         echo "welcome to our journey with PHP  "  ; //short open tag 
-        echo "welcome to our journey with PHP  "  ; //short open tag 
+        echo "welcome to our journey with PHP <br> "  ; //short open tag 
     ?>
 
     <?
-    echo "short open tag" ;
+    echo "short open tag <br>" ;
     ?>
 
-    <?= "Hello this is short circuit" ;
+    <?= "Hello this is short circuit <br>" ;
     ?>
 
-    
+    <?php 
+    print "hello print world <br>" ;
+
+    ?>
     
 
 </body>
