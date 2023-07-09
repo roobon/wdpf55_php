@@ -6,7 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>PHP basic</h1>
-    <h1>PHP basic</h1>
+    <?php 
+    $output = sprintf("I am %s Alam" , "Hero") ;
+    
+    echo $output ;
+    ?>
 </body>
 </html>
