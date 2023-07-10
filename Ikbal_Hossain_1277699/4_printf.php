@@ -12,13 +12,17 @@
         printf("Bangladesh has %d District", $districts_number);
 
         echo "<br>";
-        printf("Today's temparature is %d and yesteday was %.2f", 33, 34.5);
+        printf("Today's temparature is %d and yesterday was %.2f", 33, 34.5);
         echo "<br>";
-        printf("Today's temparature is %f and yesteday was %d", 33, 34.5);
+        printf("Today's temparature is %f and yesterday was %d", 33, 34.5);
         echo "<br>";
 
         printf("%s is a good boy", "Masum");
     
+    
+    ?>
+
+    <?php 
     
     ?>
 </body>
