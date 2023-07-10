@@ -30,7 +30,7 @@
     echo gettype($student); // to get the type of a variable
     echo "<br>";
 
-
+    // Compound Data type
     // Array Data Type
     $city = ["Dhaka", "Rajshahi", "Sylhet", "Barishal"];
     var_dump($city);
