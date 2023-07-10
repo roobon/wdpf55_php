@@ -45,6 +45,21 @@
      <?php
      echo "<p>{$name} lives in {$city}</p>"
      ?>
+     <?php 
+     $fName = "Sohel";
+     $lName ="khan";
+     $age = 25;
+     $city = "Dhaka";
+     $from = "Cumilla";
+     ?>
+     <p> Frist name:<?php echo $fName ?></p>
+     <p>Last name: <?php echo $lName?> </p>
+     <p>Age: <?php echo $age?></p>
+     <?php 
+     echo "<p>{$fName} {$lName} lives in {$city}</p>";
+     echo "<p> {$fName} {$lName}  from  {$from}. He was born in Comilla but grown up in Dhaka</p>"
+     ?>
+     
      
 
 
