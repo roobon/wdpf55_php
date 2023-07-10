@@ -6,9 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-   <?php 
-    $output = sprintf("%s is our new candidate","Hero Alam");
-    echo $output;
-   ?>
+    <?php 
+    define("USER", "Masum");
+    echo USER . " ";
+
+    define("USER1", "Sona");
+    echo USER1;
+
+    echo "<br>";
+    Const DOMAIN = "w3schools";
+    echo DOMAIN;
+
+    ?>
 </body>
 </html>
