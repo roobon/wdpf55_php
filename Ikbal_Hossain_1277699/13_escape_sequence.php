@@ -20,6 +20,10 @@
     echo "<br>";
 
     echo "The price is $200";
+    echo "<br>";
+
+    echo 'This string will $print exactly as it\'s\n declared'
+
 
     ?>
 </body>
