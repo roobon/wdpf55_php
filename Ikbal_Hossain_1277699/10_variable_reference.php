@@ -10,8 +10,12 @@
 <body>
     <?php
     $x = "Hello";
-    $y = "Rafiq";
-    echo $x . " " . $y; 
+    $y = &$x;
+    $y = "World";
+
+    echo $y;
+    echo("<br>");
+    echo $x;
     ?>
 </body>
 
