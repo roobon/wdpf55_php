@@ -18,6 +18,7 @@
 
     <h3> Array showing using for loop </h3>
     <?php
+    
         $days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         echo "<ol>";
         for ($i = 0; $i < count($days); $i++) {
