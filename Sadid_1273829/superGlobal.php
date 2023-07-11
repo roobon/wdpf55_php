@@ -37,3 +37,4 @@ echo $_POST["lname"];
     <input type="text" name="lname">
     <input type="submit" value="Submit">
 </form>
+
