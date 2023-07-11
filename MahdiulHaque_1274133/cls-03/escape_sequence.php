@@ -24,3 +24,16 @@
   
 
 ?>
+
+<?php 
+    $cities["Dhaka"] = 250;
+    $cities["Sylhet"] = 150;
+    $cities["Barisal"] = 150;
+
+    echo "<pre>";
+    print_r($cities);
+
+   echo "We live in Dhaka and population is there{$cities["Dhaka"]}" ;
+
+
+?>
