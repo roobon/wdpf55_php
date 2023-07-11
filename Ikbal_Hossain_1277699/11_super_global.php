@@ -34,6 +34,8 @@
     // echo $_GET["phone"];
     echo $_GET["fname"];
     echo $_GET["lname"];
+
+    echo
     ?>
 
     <form action="" method="post">

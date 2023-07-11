@@ -68,6 +68,8 @@
     var_dump($st);
     echo gettype($st);
 
+    echp
+
     ?>
 </body>
 
