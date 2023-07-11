@@ -38,5 +38,12 @@ print_r($_POST);
 <?php 
 print_r($_GET);
 ?>
+ <form action="" method="get">
+<input type="text" name="fname">
+<input type="text" name="lname">
+<input type="number" name="number">
+<input type="submit" name="submit" value="CLICK HERE">
 
-
+ </form>
+    
+    

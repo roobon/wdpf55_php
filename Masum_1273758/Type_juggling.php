@@ -4,7 +4,6 @@ $y = "10";
 $sum = $x+$y;
 var_dump($sum);
 $total =250;
-$Incoming = 300;
 echo "<br>";
 $p= 50;
 $q = "15.20";
