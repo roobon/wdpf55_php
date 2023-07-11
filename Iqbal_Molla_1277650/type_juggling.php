@@ -1,25 +1,26 @@
-<h3>type juggling in PHP</h3>
-<?php
-    $x = 150;
-    $y ="20";
-    
+<h3>Type Juggling in PHP</h3>
+<?php 
+    $x = 100;
+    $y = "10";
+
     $sum = $x + $y ;
+
     var_dump($sum);
     echo "<br>";
 
-    $p = "15.20";
-    $q = 30;
+    $p = 50;
+    $q = "15.5";
 
-    $result = $p * $q;
-
+    $result = $p * $q ;
     var_dump($result);
-
     echo "<br>";
 
-    $quantity = "50 cat";
-    $quant = 100;
+    $txt = "500 Cows";
+    $more = 50;
 
-    $total = $quantity + $quant;
+    $total = $txt + $more;
 
     echo $total;
+
+
 ?>
