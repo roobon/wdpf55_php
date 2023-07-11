@@ -33,7 +33,7 @@
     echo "<pre>";
     print_r($cities);
 
-    echo
+    
     ?>
 </body>
 </html>
