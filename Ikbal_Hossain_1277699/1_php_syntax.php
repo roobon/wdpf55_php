@@ -16,7 +16,8 @@
     echo "Short Open Tag way <br>"
     ?>
 
-    <?= "Hello, This is Short Circuit <br>"
+    <?=
+    "Hello, This is Short Circuit <br>"
     ?>
 
 
