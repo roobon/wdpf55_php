@@ -24,7 +24,16 @@
 
     echo 'This string will $print exactly as it\'s\n declared'
 
+    ?>
 
+    <?php 
+    $cities["Dhaka"] = 250;
+    $cities["Sylhet"] = 150;
+    $cities["Barisal"] = 450;
+    echo "<pre>";
+    print_r($cities);
+
+    
     ?>
 </body>
 </html>

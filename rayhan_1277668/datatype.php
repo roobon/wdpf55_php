@@ -43,7 +43,7 @@
             $age = $this -> age;
             $id = $this -> id;
 
-            $display = " ID "  . $id  . " Name " . $name . " Age " . $age;
+            $display = " ID "  . $id  . " Name " . $name . " Age " . $age; 
             return $display ;
         }
     }
