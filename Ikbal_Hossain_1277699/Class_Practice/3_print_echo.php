@@ -49,7 +49,7 @@
         echo "<br>";
 
 
-        // Concataction
+        // Concatenation
         echo $x . $y;
         echo "<br>";
 
