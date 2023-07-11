@@ -32,5 +32,5 @@
 <?php 
 //echo $_ENV['HOSTNAME'];
 //echo $_ENV['SHELL'];
-//print_r($_ENV);
+print_r($_ENV);
 ?>
