@@ -1,5 +1,6 @@
 <h3> Type Juggling in PHP </h3>
 
+
 <?php
 $x = 100;
 $y = "10"; 

@@ -7,9 +7,8 @@
 </head>
 <body>
     <?php 
-       $output =  sprintf("%s is our new Candidate", "Hero Alam");
-
-       echo $output;
+    // include, include_once, require, require_once
+        
     
     ?>
 </body>

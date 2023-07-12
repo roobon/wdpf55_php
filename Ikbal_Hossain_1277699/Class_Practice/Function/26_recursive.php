@@ -6,11 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <?php 
-       $output =  sprintf("%s is our new Candidate", "Hero Alam");
+    <h3> Print out 1 to 5 using recursive function </h3>
 
-       echo $output;
-    
+    <?php 
+
     ?>
 </body>
 </html>

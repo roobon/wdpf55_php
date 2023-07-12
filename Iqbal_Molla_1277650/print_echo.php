@@ -6,26 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    $name = "Iqbal Molla";
-    $age = 27;
-    $form = "Madaripur";
-    $education = "National University";
-    $subject = "Political Science"
+    <?php 
+        $name = "Masum Ahmed";
+        $age = 20;
+        $city = "Dhaka";
+        $from =  "Cumilla";
     ?>
     <p>Name is <?php echo $name; ?></p>
     <p>Age is <?php echo $age; ?></p>
-    <P>From <?php echo $form; ?></P>
-    <P>Education form <?php echo $education; ?></P>
-    <P>Subject <?php echo $subject; ?></P>
-
-
-    <?php
+    <?php 
+        echo "<p>{$name} lives in {$city} </p>";
+    ?>
+    <?php 
+        echo "His origin is {$from}<br>";
+        
+    ?>
+    <?php 
         $x = 5;
         $y = 6;
-        echo ($x); //we can brackets
+
+        echo($x); // We can use brackets
         echo $x, $y; // Echo can print multiple variable using comma
-        print($x);  //We cam using brackets
+        print ($x); //We can use brackets
+    
     ?>
+    
 </body>
 </html>
