@@ -7,9 +7,12 @@
 </head>
 <body>
     <?php 
-        $x = "Be Cool";
-        $y = "Be Smart";
-        echo $x . "," . " " . $y;
+        $x = "Hello";
+        $y = "Rafiq";
+
+        echo $x . " " . $y;
+    
     ?>
+    
 </body>
 </html>

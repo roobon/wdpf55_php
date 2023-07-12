@@ -6,91 +6,64 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>PHP datatype</h3>
-    <?php
-        //intizar Data type
+    <h3>PHP Data Type</h3>
+    <?php 
+        //integer Data type
 
         $x = 10;
-
-        var_dump($x); //to describe a variable
-        echo gettype($x); //to get the type of a variable
-
-        echo "<br>";
+        var_dump($x); // to describe a variable
+        echo gettype($x); // to get the type of a variable
         echo "<br>";
 
-        //float Datatype
+        // float Data type
         $y = 10.5;
         var_dump($y);
-        echo gettype($y);
-
+        echo gettype($y); // to get the type of a variable
         echo "<br>";
-        echo "<br>";
+        // Boolean Data type
 
-        //Boolean Datatype
         $p = true;
         var_dump($p);
-        echo gettype($p);
-
-        echo "<br>";
+        echo gettype($p); // to get the type of a variable
         echo "<br>";
 
-        //string
-
-        $student = "Iqbal";
+        // String
+        $student =  "Masum";
         var_dump($student);
-        echo gettype($student);
-
-        echo "<br>";
+        echo gettype($student); // to get the type of a variable
         echo "<br>";
 
-        //array Datatype
+        // Array Data Type
 
-        $city = ["Dhaka","Barishal","Chottogram", "Madaripur","Sylhet"];
+        $city = ["Dhaka", "Rajshahi", "Sylhet", "Barisal"];
         var_dump($city);
         echo gettype($city);
-
+        $fruits[0] = "Mango";
+        $fruits[1] = "Jackfruit";
+        $fruits[2] = "Orange";
+        $fruits[3] = "Lichi";
         echo "<br>";
-        echo "<br>";
-
-        $fruits [0]= "Banana" ;
-        $fruits [1]= "Mango" ;
-        $fruits [2]= "Orange" ;
-        $fruits [3]= "Jackfruits" ; 
-        $fruits [4]= "Lichi" ;
-
         var_dump($fruits);
         echo gettype($fruits);
 
-        echo "<br>";
-        echo "<br>";
-
-        //object Datatype
-
-        class student {
-             public $name = "Iqbal";
-             public $age = 27;
-             public $gender = "Male";
-             public $id = "1277650";
-
-             function studentInfo(){
+        // Object Data type
+        class Student {
+            public $name = "Masum";
+            public $age = 20;
+            public $id = 256333;
+            function studentInfo(){
                 $name = $this->name;
-                $age = $this->age;
-                $gender = $this->gender;
-                $id = $this->id;
-                $display = "ID " . $id . " Name " .$name . "  Age " .$age . " Gender " .$gender;
-
+                $age =  $this->age;
+                $id =  $this->id;
+                $display = "ID " . $id . " Name " . $name . " Age " . $age;
                 return $display;
-
-             }
-        } 
-        $st = new student;
+            }
+        }
+        $st = new Student;
         echo $st->studentInfo();
         echo "<br>";
-        echo "<br>";
-        var_demo($st);
+        var_dump($st);
         echo gettype($st);
-
-       
 
     ?>
 </body>
