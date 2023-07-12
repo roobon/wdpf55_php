@@ -1,5 +1,5 @@
 <h3> Type Casting in PHP </h3>
-
+type casting means type converting 
 <?php
 $mynumber = 150;
 var_dump($mynumber);
