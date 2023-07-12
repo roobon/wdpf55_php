@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-       $output = sprintf("%s is our new student", "Abdullah");
-       echo $output
+    <?php 
+       $output =  sprintf("%s is our new Candidate", "Hero Alam");
+
+       echo $output;
+    
     ?>
 </body>
 </html>

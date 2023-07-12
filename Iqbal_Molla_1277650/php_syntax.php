@@ -6,27 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <?php               
-        echo "Welcome Noob to PHP Community";
-        echo "<br>";
-        print "Welcome Noob to PHP Community";
-    ?>
-
-    <?              //Short_open_tag
-        echo "<br>";
-        echo "Short Open Tag way";
-        echo "<br>";
-    ?>
-
-    <?=             //Short Circuit
-    "Hello, This is Short Circuit";
-    ?>
-
     <?php 
-        function FunctionName() : Returntype {
-            
-        }
-        
+        echo "Welcome to our journey with PHP"; // echo
+        echo "<br>";
+        print "Welcome to our journey with PHP<br>"; // print
     ?>
+
+    <? 
+        echo "Short Open Tag way<br>" // short_open_tag
+    
+    ?>
+
+    <?=   "Hello, This is Short Circuit" // Short Circuit
+    ?>
+
 </body>
 </html>

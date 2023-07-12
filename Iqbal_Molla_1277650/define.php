@@ -1,17 +1,14 @@
-<?php
-    define("USER","Iqbal");
+<?php 
+
+    define("USER", "Masum");
 
     echo USER;
 
-    echo ("<br>");
-
     define("USER1", "Molla");
     echo USER1;
+    echo "<br>";
+    Const DOMAIN = "w3schools";
 
-    echo ("<br>");
-    const DOMAIN = "w3schools";
-    
     echo DOMAIN;
-
 
 ?>

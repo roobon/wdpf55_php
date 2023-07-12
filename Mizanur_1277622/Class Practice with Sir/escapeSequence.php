@@ -11,6 +11,13 @@ $carrageReturn = "This is first line. \r This is second line" ."\n";
 //echo "The price is \$1200"
 
 //echo "It's $tabbedline";
+?>
 
-
+<?php 
+$cities["Dhaka"] = 250; 
+$cities["Narayanganj"] = 350; 
+$cities["Barisal"] = 450; 
+echo "<pre>";
+print_r($cities);
+echo "I'm from {$cities["Barisal"]}";
 ?>
