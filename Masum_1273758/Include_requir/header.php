@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    
-</body>
-</html>
+    <a href="index.php">Home</a>|
+    <a href="contact.php">Contact</a>|
+    <a href="about.php">About</a>
