@@ -6,7 +6,7 @@
      echo "short open tag" ;   xamp--config--php.ini--short_open_tag=On
      ?>
 
-   * <?= "Hello this is short circuit"		= short circuit
+   * <?= "Hello this is short circuit"		= short circuit (echo er poriborte use hoy).
      ?>
 
 4. https://pear.php.net/  	=  php opensource library
@@ -35,5 +35,16 @@
         var_dump($student)
 
 
-8. 
+8.  php OOP Blogs = https://w3programmers.com/
 
+
+9. <?php 
+
+include ("header.php");			= file na pele ai file baade baki content show korbe.
+require ("header.php");			= file na pele execution stop hoye jabe.
+
+?>
+
+
+10. type casting   = nije change kora jay
+     type jugling   = auto change hoye jay
