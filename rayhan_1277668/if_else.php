@@ -28,10 +28,12 @@ if ($_POST['guess'] >= $number ){
 
 if (isset($_POST['guess'])) {
     switch ( $_POST['guess'] > 10 ){
+        case true :
         echo " Success ";
-    } case {
+     default: 
         echo "failed" ;
-    }
+    break; 
+}    
 }
 
 ?>
