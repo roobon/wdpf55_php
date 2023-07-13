@@ -7,4 +7,4 @@ if(array_key_exists("Ben",$age)){
 else{
     echo "Not exist";
 }
-?>uygyu7
+?>
