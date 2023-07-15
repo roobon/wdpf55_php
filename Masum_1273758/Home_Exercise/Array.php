@@ -52,7 +52,7 @@ echo "<hr>";
     }
 //Nested Array//
 $Array =[
-["name"=>"MD MASHUM HOSSIN", "Age"=>"30"];
+["name"=>"MD MASHUM HOSSIN", "Age"=>"30"]
 
 
 
