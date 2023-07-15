@@ -30,4 +30,5 @@ foreach($ages as $name=>$age){
 echo $output;
 echo "<br>"
 
+
 ?>

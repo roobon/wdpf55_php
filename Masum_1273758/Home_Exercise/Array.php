@@ -50,12 +50,67 @@ echo "<hr>";
     extract($array,EXTR_PREFIX_ALL,"a");{
         echo "Name:a$_0 Age:$a_1 Address:$a_2";
     }
-//Nested Array//
-$Array =[
-["name"=>"MD MASHUM HOSSIN", "Age"=>"30"]
+    echo "<hr>";
+    $n = array("Masum","Karim","kamrul",123,"hasan");
+    echo count($n);
+    echo "<hr>";
+    for($i=0;$i<count($n);$i++){
+    echo $n[$i]."<br>";}
+        echo "<hr>";
+        $fruits = array("Apple","Banana","Orange","Jackfruit","Mango");
+        $someFruits = array_slice($fruits,2,3,true);
+        print_r( $someFruits);
+        echo "<hr>";
+        $randomData =array("a"=>45,"b"=>20,"c"=>60,"d"=>80,"e"=>70,"f"=>90,45=>110,12=>20,"g"=>120);
+        $result  =array_slice($randomData,1,null,true);
+        print_r($result);
+        echo "<hr>";
+        $fruits = array("Apple","Banana","Orange","Jackfruit","Mango","Guava","PineApple");
+        $newfruits=array("tamaring","pineapple");
+        $someFruits= array_splice($fruits,-4,3,$newfruits);
+        print_r($fruits);
+        print_r($someFruits);
+        echo "<hr>";
+        $fruits = array("Apple","Banana","Orange","Jackfruit","Mango","Guava","PineApple");
+        $newfruits1 =array_slice($fruits,2,3);
+        $newfruits2 = array_slice($fruits,1,5);
+        $somefruits =array_merge($newfruits1,$newfruits2);
+        print_r($newfruits1);
+        print_r($newfruits2);
+        print_r($somefruits);
+        echo "<hr>";
+        $random = array("a"=>20,"b"=>30,"c"=>40,"d"=>50,60=>50,"e"=>70,"f"=>30,70=>110);
+        $r1 = array_slice($random,4,8,true);
+        $r2 = array_slice($random,2,6,true);
+        $r3 =array("g"=>210,"k"=>250);
+        $randomData =$r1+$r2+$r3;
+        
+        print_r($randomData);
+        print_r($r1);
+        echo "<hr>";
+        $n =array(10,20,30,50,60,70,80,100,120,360,120,458);
+        $fruits = array("a"=>"Mango","b"=>"Apple","c"=>"Orange","d"=>"Banana","e"=>"Jackfruit","f"=>"Guava");
+       ksort($fruits);
+       print_r($fruits);
+        sort($n, SORT_STRING);
+        print_r($n);
+        for($i=0;$i<count($n);$i++){
+            echo $n[$i]."<br>";
+        }
+        foreach($n as $numbers){
+            echo $numbers."<br>";
+        }
+        echo "<hr>";
+        $random =array("Mango","mango","apple","Apple","Banana","banana","Orange","orange");
+        sort($random, SORT_STRING|SORT_FLAG_CASE);
+        print_r($random);
 
 
+       
+        
 
-]
+
+        
+    
 
 ?>
