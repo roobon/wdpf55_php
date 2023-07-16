@@ -25,7 +25,20 @@ foreach($country as $company=>$brand){
     "</tr>";
 
 }
-echo "</table>"
+echo "</table>";
+echo "<hr>";
+  function Factorial($x){
+    if($x<=1) return 1;
 
+   {return $x  * Factorial($x-1);}
 
+  }
+ echo Factorial(5);
+ echo "<hr>";
+ function myFunction($n){
+    if($n<=1)return 2;
+    {return $n * Factorial($n-1);}
+
+ }
+ echo Factorial(6)
 ?>
