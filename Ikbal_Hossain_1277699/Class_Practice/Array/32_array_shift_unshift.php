@@ -11,7 +11,4 @@
     array_shift($cars, "Marcedes");
     print_r($cars);
     echo "<hr>";
-
-
-
 ?>

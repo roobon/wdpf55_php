@@ -47,5 +47,18 @@ elseif($alam!=$rahim){
 else{
     echo("Alam has more money than rahim");
 }
+$food ="Apple";
+$male = "Banana";
+if($food==$male){
+    echo("It's contains vitamin D");
+}
+elseif ($food>=$male){
+    echo ("we know it's not contains vitamin D");
+}
+
+else{
+    echo ("Does not vitamin");
+}
+
 
 ?>
