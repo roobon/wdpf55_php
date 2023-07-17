@@ -6,7 +6,7 @@
      echo "short open tag" ;   xamp--config--php.ini--short_open_tag=On
      ?>
 
-   * <?= "Hello this is short circuit"		= short circuit
+   * <?= "Hello this is short circuit"		= short circuit (echo er poriborte use hoy).
      ?>
 
 4. https://pear.php.net/  	=  php opensource library
@@ -35,5 +35,90 @@
         var_dump($student)
 
 
-8. 
+8.  php OOP Blogs = https://w3programmers.com/
 
+
+9. <?php 
+
+include ("header.php");			= file na pele ai file baade baki content show korbe.
+require ("header.php");			= file na pele execution stop hoye jabe.
+
+?>
+
+
+10. type casting   = nije change kora jay
+     type jugling   = auto change hoye jay
+
+
+
+====================================== Array =====================================
+
+
+
+11. Assosiative array er index nubmer thakle index number diyesearch korte hoy, text thakle text diye search korte hoy.
+
+
+12. Explode() function
+
+<?php 
+
+$txt = "we have mid month exam on 16th July";
+$data =  explode( " " , $txt );				= explode function string ke array banay. 
+echo "<pre>" ;						= ai function e 2ta parameter thake, first ta seperator, second ta variable/string.
+print_r($data)
+
+?>
+
+
+13. range array
+
+<?php 
+
+$array = range(0 , 20 , 3) ;				=  0 theke 20 porjonto array dekhabe, 3 bebodhan e count hobe.
+echo "<pre>" ;					range(0,20,3) function e 3ta parameter thake. 3rd parameter e bebodhan deya hoy. ( eta optional )
+print_r($array)
+
+?>
+
+
+
+14. in_array()
+
+<?php 
+$number = array(1,2,3,4,5);
+
+if(in_array(2,$number)){
+    echo "yes, you are selected";		= it is an build in function checks if a number is in the array or not.
+} else {
+    echo "sorry" ;
+}
+
+?>
+
+
+
+15. array_key_exist()
+
+<?php 
+$age = array("peter"=>35, "Ben"=>37,"joe"=>43 );
+
+if (array_key_exists("Ben",$age))		 = same as in_array() but works in assosiative array.
+{
+    echo "yes, exist";
+}else {
+    echo "Not exist";
+}
+
+?>
+
+
+
+
+16. array_search
+
+<?php 
+$age = array("peter"=>35, "Ben"=>37,"joe"=>43 );	= array_search diye ( value ) search kora hoy ( key/property/index ) return kore.
+
+echo array_search(35, $age)
+
+?>

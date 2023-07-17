@@ -36,7 +36,7 @@
        //  else{
         //    echo "This is Poor";
        // }   
-   }
+   };
 ?>
 </body>
 </html>
