@@ -4,7 +4,7 @@ class DbConnection
     private $host = 'localhost';
     private $username = 'root';
     private $password = '';
-    private $database = 'php_oop_crud';
+    private $database = 'mhs';
     
     protected $connection;
     
@@ -23,4 +23,3 @@ class DbConnection
         return $this->connection;
     }
 }
-?>
