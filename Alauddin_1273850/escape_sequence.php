@@ -26,3 +26,14 @@ $print = 'print';
 echo "The string will $print exactly as it's \n declared.";
 
 ?>
+
+<?php 
+    $cities["Dhaka"] = 250;
+    $cities["Sylhet"] = 150;
+    $cities["Barishal"] = 450;
+    echo "<pre>";
+    print_r($cities);
+
+    echo "We live in Dhaka and population is there {$cities["Dhaka"]}";
+
+?>
