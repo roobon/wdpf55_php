@@ -22,4 +22,4 @@ $Students = array(
     "Iqbal"=> array("email"=>"pqr@gmail.com", "phone"=> "01521323367"));
 print_r($Students);
 
-echo $Students["Iqbal"]["phone"];
+echo "Iqbal's phone number is " . $Students["Iqbal"]["phone"];
