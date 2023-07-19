@@ -19,5 +19,13 @@ $obj1->displayVar();
 echo SimpleClass::AGE; 
 echo "<br>"; 
 echo SimpleClass::$address;      //scope resolution operator//kono const property ...k access kora ae ta static...k er khettre..o ae method use kora jye.
-
+echo "<hr>";
+class checkData{
+    public $var = "Bangladesh cricket team is most powerful Cricket Team any other country";
+    public function sayHello(){
+        echo $this->var;
+    }
+}
+$obj=new checkData;
+$obj->sayHello();
 ?>
