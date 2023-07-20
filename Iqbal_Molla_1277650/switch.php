@@ -23,7 +23,7 @@
         echo "good";
         break;
         default:
-        echo "Poor"
+        echo "Poor";
     }
        
         //if($_POST['Guess']>=15){
