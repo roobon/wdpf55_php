@@ -2,16 +2,21 @@
 
 // numeric indexed array
 $fruits = ["Mango", "Banana", "Apple", "Orange"];
-// echo "<pre>";
+echo "<pre>";
 print_r($fruits);
+echo "<br>";
+echo "<br>";
 
 
 // associative array
 $items = array(
-    "drinks" => "Water", "Milk", "Coke",
-    "fruits" => "Mango", "Banana", "Apple", "Orange",
+    "drink" => "Water",
+    "fruit" => "Mango",
+    "vegitable" => "Potato"
 );
 print_r($items);
+echo "<br>";
+echo "<br>";
 
 // multi Dimensional Array
 $numbers = [
