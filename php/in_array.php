@@ -6,4 +6,11 @@ if(in_array(10, $numbers)){
 } else {
     echo "Sorry!";
 }
+$fruits =array("a"=>"apple","b"=>"Banana","c"=>"Orange");
+if(in_array("ornage",$fruits)){
+    echo "Yes,apple is available";
+}
+else{
+    echo "Not available";
+}
 ?>
