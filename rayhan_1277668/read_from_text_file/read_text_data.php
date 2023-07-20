@@ -15,8 +15,6 @@ foreach ( $users as $user ) {
             Email : $email    <br> 
             Phone : $phone    <br>  ";
 
-    
-
 }
 
 ?>
