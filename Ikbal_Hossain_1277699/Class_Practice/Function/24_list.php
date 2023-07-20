@@ -9,13 +9,14 @@
     <?php 
         $colors = ["Green", "Orange", "Yellow"];
 
-        print_r($colors);
+        print_r($colors);  // ekta element ar value gulake loop cara list akare dekhanor jonno list function use kora hoy
         echo "<hr>";
 
         list($value1, $value2, $value3) = $colors;
         echo "$value1 <br> $value2 <br> $value3";
+        echo "<hr>";
     ?>
-    echo "<hr>";
+
 
     <?php 
         function userProfile(){
