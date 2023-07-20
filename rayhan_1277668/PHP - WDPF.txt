@@ -51,7 +51,7 @@ require ("header.php");			= file na pele execution stop hoye jabe.
 
 
 
-====================================== Array =====================================
+======================================= Array ======================================== 
 
 
 
@@ -122,3 +122,59 @@ $age = array("peter"=>35, "Ben"=>37,"joe"=>43 );	= array_search diye ( value ) s
 echo array_search(35, $age)
 
 ?>
+
+
+========================= OOP PHP =============================
+
+
+17. class er vitor  
+	variable = property 
+    	Function = method
+
+*** Use the "extends" keyword to inherit all methods from another class.
+
+    Use the "super" method to call the parent's constructor function.
+
+
+
+
+18. __construct method
+
+<?php 
+class Car {
+
+    function __construct(){
+        echo "car object is initiated" ;			= __construct function/method auto call hoye jay. call kora laage na.
+    }
+    
+    function sayHallo() {
+        echo " <br> welcome to car class";
+    }
+}
+
+$obj1 = new Car ;
+
+?>
+
+
+* function __construct($name){
+      echo "car name is $name object is initiated" ;		= parameter pass kore deya jay.
+   }
+
+
+
+
+19. __destruct method
+
+ function __destruct(){
+       echo "say bye bye" ;			= shob method/function run korar por sheshe eta run kore. ai function argument/parameter receive 
+    }						  korte pare na.
+
+
+20.  	private $name
+	public $name				= OOP access modifier / visibility / scope
+	protected $name
+
+
+
+21. constructor ()				= actual object ta toiri korbe.
