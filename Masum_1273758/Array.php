@@ -28,5 +28,7 @@ foreach($ages as $name=>$age){
     $output .="Name:$name Age:$age <br>";
 }
 echo $output;
+echo "<br>"
+
 
 ?>
