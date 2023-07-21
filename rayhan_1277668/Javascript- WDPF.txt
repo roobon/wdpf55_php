@@ -62,5 +62,11 @@ console.log(digits);				= porita alada string hishebe dekhabe.
 
 
  
-8.
+8. window.open()
+
+ * var myWindow =  window.open("" , "my_window" , "height=500,width=800,")  	= (URL, name, specs, replace)
+
+
+9.  
+
  
