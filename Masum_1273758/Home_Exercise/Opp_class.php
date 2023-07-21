@@ -203,7 +203,27 @@ $daddy=new daddy;
 echo $daddy->displayGrandFaName();
 $outside =new grandFather();
 $outside->name;
+echo "<hr>";
+class coutnryFruits{
+    public $fruit ="Mango, Apple";
+    public function getName(){
+        return $this->fruit;
+    }}
+    class districtFruits extends coutnryFruits{
+        public function anotherFruits(){
+            return $this->fruit;
+        }
+    }
+    $newFruits=new coutnryFruits();
+    echo $newFruits->getName();
+    $districtFruit=new districtFruits();
+    echo "<br>";
+    echo $districtFruit->anotherFruits();
+    $outsidefruits=new coutnryFruits();
+    echo "<br>";
+   echo $outsidefruits->fruit;
 
+   
 
 
     
