@@ -226,6 +226,48 @@ $reversed = array_reverse($numbers) ;   // main array ke change kore na. new arr
 
 
 
+23. asort () rsort() Ksort()
+
+$numbers = array(25,7,86,10,5,30);		= serial onujaye sorting kore (assosiation thik rekhe).
+asort($numbers) ;
+rsort($numbers);				= reverse korebe (assosiation thik rekhe)
+
+
+$fruits = array("Apple"=>215 , "Banana"=>310 , "Orange"=>130, "Angur" => 250 ) ;	
+ksort($fruits);					= array er key gulake sorting kore.
+
+
+
+
+24.  array_merge()  array_combined()  suffle() 
+
+
+$asia = ["Bangladesh" , "Nepal" , "Srilanka", "Bhutan"];
+$other = [ " Austaralia" , "Netherland", "Canada", "England" ] ;
+
+
+$merged = array_merge($asia , $other) ;				= duita ak array te chole jabe.
+$combined = array_combine($asia , $other) ;			= first array er element ke key, second element ke value nibe. 
+$shuffled = shuffle($merged) ;					= array will be shuffled
+
+echo" <pre> " ;
+print_r($merged) ;
+
+print_r($combined) ;
+print_r($shuffled) ; 
+
+
+
+
+25.  array_slice()
+
+$cities = [ "Dhaka" , "Rajshahi", "Khulna", "Barisal", "sylhet", "Ctg" , "Mymsk" ];
+
+$sliced = array_slice($cities, 3,2) ;			= 3 no index there shuru, 2 ta nibe
+
+echo "<pre>" ;
+print_r($sliced) ;
+
 
 
 
