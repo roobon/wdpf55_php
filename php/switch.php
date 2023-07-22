@@ -36,5 +36,6 @@
         <input type="text" name="guess" placeholder="Guess a number">
         <input type="submit" value="CHECK">
     </form>
+   
 </body>
 </html>
