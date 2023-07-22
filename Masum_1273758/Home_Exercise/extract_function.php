@@ -37,6 +37,46 @@ $student=[
 foreach ($student as list($key,$value)){
     echo $key.":".$value."<br>";
 }
+echo "<hr>";
+$furits=["a"=>"Apple","b"=>"Banana","c"=>"Mango"];
+ extract($furits);
+ echo $a;
+ echo "<br>";
+
+ echo $b;
+ echo "<br>";
+ echo $c;
+ echo "<hr>";
+ $names=["Masum","Rayan","Kamrul","Hasan","Nadia","Sultana"];
+ extract($names, EXTR_PREFIX_ALL ,"a");
+ echo $a_0;
+ echo "<br>";
+ echo $a_1;
+ echo "<br>";
+ echo $a_2;
+ echo "<br>";
+ echo $a_3;
+ echo "<br>";
+ echo $a_4;
+ echo "<hr>";
+ $number=range(10,20);
+ echo "<pre>";
+ print_r($number);
+ $numbers=range(20,10);
+ print_r($numbers);
+ echo "<hr>";
+ $letter=range("a","n");
+ print_r($letter);
+ echo "<br>";
+ $letters = range("t","a");
+ print_r($letters);
+
+
+
+
+
+ 
+
 
 
 
