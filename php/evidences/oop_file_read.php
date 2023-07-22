@@ -29,31 +29,10 @@
 <br><br>
  <form action="">
  	<select name="stid">
- 		<option value="1">Yearul</option>
- 		<option value="2">Imran</option>
- 		<option value="3">Noor</option>
+ 		<option value="1">Masum</option>
+ 		<option value="2">Molla</option>
+ 		<option value="3">Iqbal</option>
  	</select>
  	<input type="submit" name="submit" value="SHOW RESULT">
  </form>
 
-<?php  
-	$a = "1";  
-	
-switch($a)  
-	{  
-		case 1:  
-		echo "Hasan";  
-		case 2:  
-		echo "Rabbany";  
-		default:  
-		echo "It is Naymur Rahman";  
-	}  
-?>
-
-<?php  
-	$a;  
-	if ($a)  
-	{  echo "hi";  }  
-	else  
-	{  echo "How are you"; }  
-?> 
