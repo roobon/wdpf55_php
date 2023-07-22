@@ -31,7 +31,7 @@
         }
     ?>
 
-    <form action="">
+    <form action="" method="post">
         <input type="number" name="myNum" placeholder="Enter a number">
         <input type="submit" name="submit" value="Submit">
     </form>
