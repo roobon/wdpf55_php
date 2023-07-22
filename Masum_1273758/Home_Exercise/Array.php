@@ -104,7 +104,18 @@ echo "<hr>";
         $random =array("Mango","mango","apple","Apple","Banana","banana","Orange","orange");
         sort($random, SORT_STRING|SORT_FLAG_CASE);
         print_r($random);
-
+        echo "<hr>";
+        echo "<pre>";
+        $student=[
+            ["Al Mahmud Hasan",10],
+            ["Khayrul Alam Rayan",20],
+            ["Kamrul Hasan",25],
+        ];
+       
+            foreach($student as list($name,$age)){
+             
+                echo " Name :$name Age:$age "."<br>";
+            }
 
        
         
