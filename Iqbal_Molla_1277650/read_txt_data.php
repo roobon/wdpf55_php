@@ -15,7 +15,7 @@ print_r($users);
             
         echo "</tr>";
         //list($name,$email,$phone) = explode("|", $user);
-  echo "</table>"
+  echo "</table>";
 
   
   //echo "Name: $name email:$email phone:$phone";
