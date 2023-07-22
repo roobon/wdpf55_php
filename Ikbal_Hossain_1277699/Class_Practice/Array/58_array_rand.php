@@ -7,5 +7,4 @@
     $picked = array_rand($fruits, 1);
     echo "<br>";
     print_r($picked);
-
 ?>
