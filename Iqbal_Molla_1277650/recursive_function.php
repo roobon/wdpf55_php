@@ -9,3 +9,4 @@ function numberDisplay($number){
 }
  //calling number
  numberDisplay(1);
+ ?>

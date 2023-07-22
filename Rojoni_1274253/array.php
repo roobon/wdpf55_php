@@ -17,15 +17,15 @@
      $age = array ("Masum"=>20,"Imran"=>21,"Mizanur"=>22,"Molla"=>23);
 
 
-    //  echo "<pre>";
-    //        print_r($age);
-    //         echo "<ul>";
-    //        foreach($age as $name=>$age){
-    //         echo "<li>" . $name . ":" . $age ."</li>";
+     echo "<pre>";
+           print_r($age);
+            echo "<ul>";
+           foreach($age as $name=>$age){
+            echo "<li>" . $name . ":" . $age ."</li>";
 
-    //        }
-    //        echo "</ul>";
-    //        echo "<hr>";
+           }
+           echo "</ul>";
+           echo "<hr>";
 
     $output = "";
     foreach($age as $name=>$age){
@@ -44,10 +44,59 @@
         print_r($students);
 
         echo $students["Iqbal"]["Phone"];
+
+        echo "<hr>";
+          
+$a = "clue";    
+$a .= "get";   
+ echo "$a";
+ 
+ echo "<hr>";
+ 
+ $a = 5;    
+$b = 5;    
+echo ($a === $b); 
+
+echo "<hr>";
+$total = "25 students";    
+$more = 10;    
+$total = $total + $more;    
+echo "$total";
+echo "<hr>";
+
+$mcq = 1;
+switch(print $mcq)
+{
+case 2:
+    print "HTML";
+    break;
+case 1:
+    print "CSS";
+    break;
+default:
+    print "JavaScript";
+}
+
+
+echo "<hr>";
+
+$a = 100;
+if ($a > 10)
+    print("PHP Quiz");
+else if ($a > 20)
+    print("PHP MCQ");
+else if($a > 30)
+    print("PHP Program");
+
+    echo "<hr>";
+
+    $num = 10;    
+
+echo 'What is her age? \n She is $num years old';    
+?>
         
    
 
 
-?>
 
 
