@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No- 2</title>
+</head>
+
+<body>
+    <script>
+        function userInput() {
+            const user_email = prompt("Please enter your email address:");
+            const email_validation = new EmailValidation(user_email);
+            const result = email_validation.validate();
+            alert(result);
+        }
+
+        class EmailValidation {
+            constructor(email) {
+                this.email = email;
+            }
+
+            validate() {
+                if (this.email.includes("@") && this.email.includes(".")) {
+                    return "Email address is correct.";
+                } else {
+                    return "Email address is wrong.";
+                }
+            }
+        }
+        
+        userInput();
+    </script>
+</body>
+
+</html>
