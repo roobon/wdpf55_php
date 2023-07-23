@@ -10,9 +10,9 @@ printf ("The smallest planet is  %s  & The biggest planet is %s \n", strtoupper(
 $fname = "Mizanur";
 $mname = "Rahman";
 $lname = "Rana";
-printf('My full name is %s %s %s ', $fname, $mname, $lname); // (%S) called argument 
+printf('My full name is %s %s %s ', $fname, $mname, $lname); // (%s) called argument 
 echo "\n";
-printf('My full name is %2$s %1$s %3$s', $fname, $mname, $lname);
+printf('My full name is %2$s %1$s %3$s', $fname, $mname, $lname); //change the argument serial. I declare the serial.
 echo "\n";
 
 
