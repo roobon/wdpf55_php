@@ -11,7 +11,7 @@ class SimpleClass
         echo $this->a . "<br>";
     }
     public static function sayHello(){
-       echo  self:: . "(". self:: Age.
+       echo  self:: $address . "(". self:: Age. ")";
     }
 }
 
