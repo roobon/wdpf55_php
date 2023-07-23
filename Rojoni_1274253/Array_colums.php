@@ -19,5 +19,16 @@ echo "<pre>";
 print_r($email);
 
 
+//mcq
+
+function calc($price, $tax)	    {        
+    $total = $price + $tax;    
+    }    
+    $pricetag = 15;    
+    $taxtag = 3;    
+    
+    calc($pricetag, $taxtag);
+
+
 
 ?>
