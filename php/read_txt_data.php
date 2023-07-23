@@ -8,5 +8,3 @@
         list($name, $email, $phone) = explode("|", $user);
         echo "Name: $name, Email: $email Phone: $phone<br>";
     }
-
-?>

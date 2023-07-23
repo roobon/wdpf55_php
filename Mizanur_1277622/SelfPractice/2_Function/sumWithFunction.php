@@ -10,7 +10,7 @@ echo "Sum of = " . sum(6,8,20);
 //we can sum as much as we input on this function
 function sumUnlimited(int ...$numbers){
     $output = 0;
-    for($i=0;$i<count($numbers); $i++){
+    for($i=0;$i<count($numbers); $i++){  //count is used to know length in php
         $output += $numbers[$i];
     }
     return $output;
