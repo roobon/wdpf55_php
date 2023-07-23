@@ -4,8 +4,6 @@ $users = file('users.txt');
 echo "<pre>";
 print_r($users);
 
-
-
 echo "<hr>";
 
 foreach ( $users as $user ) {

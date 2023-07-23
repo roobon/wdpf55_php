@@ -118,7 +118,27 @@ echo "<hr>";
             }
 
        
-        
+         $country=array("a"=>"Bangladesh","b"=>"Canada","c"=>"Pakistan");
+     reset($country);
+     for($i=0;$i<count($country);$i++){
+        echo key($country).":".current($country);
+        next($country);
+        echo "<br>";
+     }
+     end($country);
+     for($i=count($country);$i>0;$i--){
+        echo key($country).":".current($country);
+        prev($country);
+     }
+     $person=[
+        ["Name"=>"khayrul Alam Rayan","age"=>20],
+        ["Name"=>"Al Mahmud hasan","age"=>30],
+        ["Name"=>"Anwer khan","age"=>40],
+     ];
+     foreach($person as $key=>$value){
+        echo "Name:".$value["Name"]."Age:".$value["age"]."<br>";
+     }
+     
 
 
         

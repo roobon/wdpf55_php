@@ -4,5 +4,7 @@ function serve($foodType="Coffee", $numberOfItems="1 cup"){
 }
 //$ft = "Coffee";
 //$n = "5 cups";
-serve("Chicken", "10"); //if we don't input any value on this function default value will be show
+serve("Chicken", "10"); //if we input any value on this function input value will be show
+echo "\n";
+serve(); //if we don't input any value on this function default value will be show
 ?>
