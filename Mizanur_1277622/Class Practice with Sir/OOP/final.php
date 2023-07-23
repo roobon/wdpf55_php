@@ -30,4 +30,5 @@ class Derived extends Base {
 $obj = new Derived;
 $obj->printdata();
 $obj->nonfinal();
+
 ?>
