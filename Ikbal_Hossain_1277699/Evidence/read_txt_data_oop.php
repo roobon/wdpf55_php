@@ -8,7 +8,9 @@
             $rawData = file($this->data);
             // print_r($rawData);
             foreach($rawData as $item){
-                echo $item . "<br>";
+                // echo $item . "<br>";
+               list($name, $email, $phone) = explode("|" , $item);
+               echo "Name: $name - Email: $email - Phone: $phone <br>";
             }
         }
         
