@@ -2,6 +2,8 @@
 
 class Car{
 
+    private $name;
+    private $id;
     function __construct($name)
     {
         echo "{$name} Car object is inherited. \n";
