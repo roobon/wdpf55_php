@@ -7,7 +7,7 @@ function factorial($n){
         return $n*factorial($n-1);
     }
 }
-//echo "factorial of 10 is " . factorial(10);
+echo "factorial of 10 is " . factorial(5);
 ?>
 
 
@@ -20,8 +20,8 @@ function fact(int $x){ //we define only integer value will be accepted otherwise
  }
  return $output;
 }
-$x = "5";
-//echo "Factotial of $x is " .fact($x);
+$x = "6";
+echo "Factotial of $x is " .fact($x);
 ?>
 
 
