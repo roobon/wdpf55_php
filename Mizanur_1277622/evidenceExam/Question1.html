@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question No-1</title>
+</head>
+
+<body>
+    <form id="traineeForm">
+        <label for="formHeading">
+            <h2>Trainee's Data</h2>
+        </label>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required /><br><br>
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" required /><br><br>
+
+        <label for="remarks">Remarks:</label><br>
+        <textarea id="remarks" rows="4" cols="30"></textarea><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required /> Male
+        <input type="radio" name="gender" value="Female" required /> Female<br><br>
+
+        <label>Courses:</label>
+        <input type="checkbox" name="courses" value="NT" /> NT
+        <input type="checkbox" name="courses" value="IAD" /> IAD
+        <input type="checkbox" name="courses" value="DDD" /> DDD
+        <input type="checkbox" name="courses" value="ESAD" /> ESAD
+        <input type="checkbox" name="courses" value="WDPF" /> WDPF<br><br>
+
+        <label for="location">Location:</label>
+        <select id="location" required>
+            <option value="">Select Location</option>
+            <option value="Banani">Banani</option>
+            <option value="Dhanmondi">Dhanmondi</option>
+            <option value="Mirpur">Mirpur</option>
+        </select><br />
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        class TraineeData {
+            constructor(name, contact, remarks, gender, courses, location) {
+                this.name = name;
+                this.contact = contact;
+                this.remarks = remarks;
+                this.gender = gender;
+                this.courses = courses;
+                this.location = location;
+            }
+        }
+
+        function showFormattedData(traineeData) {
+            const formattedData = `
+        <h2>Trainee's Data</h2>
+        <p>Name: ${traineeData.name}</p>
+        <p>Contact: ${traineeData.contact}</p>
+        <p>Remarks: ${traineeData.remarks}</p>
+        <p>Gender: ${traineeData.gender}</p>
+        <p>Courses: ${traineeData.courses.join(", ")}</p>
+        <p>Location: ${traineeData.location}</p>`;
+
+            const newWindow = window.open("", "", "height=600, width=500");
+            newWindow.document.write(formattedData);
+            //newWindow.document.close();
+        }
+
+        document
+            .getElementById("traineeForm")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const name = document.getElementById("name").value;
+                const contact = document.getElementById("contact").value;
+                const remarks = document.getElementById("remarks").value;
+                const gender = document.querySelector(
+                    'input[name="gender"]:checked'
+                ).value;
+                const courses = Array.from(
+                    document.querySelectorAll('input[name="courses"]:checked')
+                ).map((input) => input.value);
+                const location = document.getElementById("location").value;
+
+                const traineeData = new TraineeData(
+                    name,
+                    contact,
+                    remarks,
+                    gender,
+                    courses,
+                    location
+                );
+                showFormattedData(traineeData);
+            });
+    </script>
+</body>
+
+</html>

@@ -8,6 +8,7 @@ function foo($op1) {
 }     
 foo("hello");    
 
+
 ?>
 
 
