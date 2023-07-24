@@ -42,7 +42,7 @@
 
         $st->showResult($id);
     }
-    echo PHP_EOL;
+    // echo PHP_EOL; 
     ?>
 
     <form action="" method="post">
