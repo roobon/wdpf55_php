@@ -1,4 +1,6 @@
 <?php
+require_once('persistable.interface.php');
+
 class Topic implements Persistable {
   private $subject;
   private $author;

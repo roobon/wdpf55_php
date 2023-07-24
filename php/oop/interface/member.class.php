@@ -1,4 +1,6 @@
 <?php
+require_once('persistable.interface.php');
+
 class Member implements Persistable {
   private $username;
   private $location;
