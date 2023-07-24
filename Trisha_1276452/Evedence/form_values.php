@@ -31,6 +31,7 @@ if(isset($_REQUEST['submit'])){
         return $number . "is a prime number";
     }
 }
+
 //end of function
 $mynumber = $_REQUEST['mynum'];
     echo PrimeCheck($mynumber);
