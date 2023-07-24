@@ -1,22 +1,23 @@
-<?php 
-    // Class
-    class Student {
-        private $data; //Property
-        function __construct($x){ //Constructor
+<?php
+     //class
+     class Student{
+        private $data; //property
+        function __construct($x){ //constructor
             $this->data = $x;
         }
-        function showResult($y){  // Method
-            $rawData = file($this->data);
-            foreach($rawData as $line){
-                 list($id, $name, $batch, $result)    =  explode("," , $line);
-                 if($id == $y){
-                    echo "ID: $id, Name: $name, Result: $result <br><br>";
-                 } 
+        function showresult($y){ //method
+            $rowData = file($this->data);
+            foreach($rowData as $line){
+            list($id,$name, $batch, $result) = explode(",",$line);
+            if($id == $y){
+                echo "ID:$id, Neme: $name, Result:$result <br> <br>";
+            }
             }
         }
-    } // End of class
-  $st =  new Student('result.txt'); // Create object with a parameter
+     }
+    $st = new student('result.txt'); //create object with paramiter
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,24 +28,26 @@
 </head>
 <body>
     <h3>Find Result</h3>
-    <?php 
-        // Result
-        if(isset($_POST['submit'])){ // Check button is clicked
-            $id = $_POST['st_id'];  // ID picked from below form
-            $st->showResult($id); // Method called with ID
-        }      
+    <?php
+        //result
+        if(isset($_POST['submit'])){
+           $id = $_POST["stu_id"];
+            $st->showresult($id);
+        }
+       
     ?>
-    <form action="" method="post">
-        <select name="st_id">
-            <option value="" disabled selected>Select One</option>
-            <option value="1">Masum</option>
-            <option value="2">Molla</option>
-            <option value="3">Ikbal</option>
-            <option value="4">Raihan</option>
-            <option value="5">Shuvo</option>   
+     
+    <form action=""  method="post">
+        <select name="stu_id" >
+                <option value="">Select One</option>
+                <option value="1">Mizan</option>
+                <option value="2">Iqbal</option>
+                <option value="3">Molla</option>
+                <option value="4">Mamun</option>
+                <option value="5">Sadid</option>
         </select>
-        <input type="submit" name="submit" value="FIND">
-    </form>
-    
+        <input type="submit" name="submit" value="FIND" >
+    </form>    
+
 </body>
 </html>
