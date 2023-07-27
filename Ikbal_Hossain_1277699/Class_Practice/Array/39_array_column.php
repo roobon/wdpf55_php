@@ -1,4 +1,6 @@
 <?php 
+// The array_column() function returns the values from a single column in the input array.
+
     $address = array(
         ["name"=> "Molla", "phone"=> "+8801782-158120", "email"=> "molla@gmail.com"],
         ["name"=> "Masum", "phone"=> "+8801920-797783", "email"=> "masum@gmail.com"],

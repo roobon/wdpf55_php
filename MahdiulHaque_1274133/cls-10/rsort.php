@@ -10,7 +10,7 @@
   echo "<br>";
   rsort($fruits);
   print_r($fruits);
-  echo "<br>"
+  echo "<br>";
   rsort($days);
   print_r($days);
 
