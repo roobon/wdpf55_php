@@ -1,7 +1,7 @@
 <?php 
-$a = 3;
+$a = 1;
 do {
     echo $a . "\n";
     $a++;
-} while ($a < 10);
+} while ($a <=0);
 ?>
