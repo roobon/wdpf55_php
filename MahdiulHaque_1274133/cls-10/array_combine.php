@@ -2,12 +2,12 @@
    
    $asia = ["Bangladesh", "Nepal", "Bhutan", "Srilanka", "India", "Pakistan"];
 
-   $capital = ["Dhaka", "Kathmandu", "Thimpu", "Newzealand", "Delhi", "Islamabad"];
+   $capital = ["Dhaka", "Kathmandu", "Thimpu", "Newzealand", "Delhi", ];
 
-   $combined = array_combine($asia, $capital);
+   $merged = array_combine($asia, $capital);
 
    echo "<pre>";
-   print_r($combined );
+   print_r($merged);
 
 
 

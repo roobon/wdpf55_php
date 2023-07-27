@@ -64,7 +64,7 @@ require ("header.php");			= file na pele execution stop hoye jabe.
 <?php 
 
 $txt = "we have mid month exam on 16th July";
-$data =  explode( " " , $txt );				= explode function string ke array banay. 
+$data =  explode( "," , $txt );				= explode function string ke array banay. 
 echo "<pre>" ;						= ai function e 2ta parameter thake, first ta seperator, second ta variable/string.
 print_r($data)
 
@@ -328,3 +328,44 @@ $obj1 = new Car ;
 
 
 21. constructor ()				= actual object ta toiri korbe.
+
+
+
+
+22. class_exists()
+
+   class GFG {
+	public $Geek_name = "Welcome to GeeksforGeeks";
+  }
+    if(class_exists('GFG')) {			= check if the class exist or not.
+	echo "Class name exists";
+     }
+
+
+
+23. $allmethods = get_class_methods("myclass") ; 	= class er vitor methods/functions gula show korbe.
+
+
+24. $vars = get_class_vars('GFG') ;			= give the variables in a class.
+
+
+25. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
