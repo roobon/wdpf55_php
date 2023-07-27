@@ -46,8 +46,15 @@
                 <option value="4">Mamun</option>
                 <option value="5">Sadid</option>
         </select>
+<<<<<<< HEAD
+        <input type="submit" name="submit" value="FIND">
+    </form>
+    
+
+=======
         <input type="submit" name="submit" value="FIND" >
     </form>    
+>>>>>>> dd2f499a33d7e5c8ea408aed4e150647f997119d
 
 </body>
 </html>
