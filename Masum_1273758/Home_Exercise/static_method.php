@@ -1,5 +1,6 @@
 <?php
 
+use childClass as GlobalChildClass;
 use person as GlobalPerson;
 
 class staticText{
@@ -89,7 +90,19 @@ mylaibary::myBook();
 echo "<br>";
 laibary::myBook();
 echo "<br>";
-laibary::myBook()
+laibary::myBook();
+echo "<hr>";
+abstract class abstractClass{
+   public  abstract function getName($name);
+}
+class childClass extends abstractClass{
+    function getName($name){
+    return " Hi ".$name."!";
+    }
+}
+$obj =new GlobalChildClass();
+echo $obj->getName(" khayrul Alam Rayan ");
+echo "<br>"; 
 
 
 

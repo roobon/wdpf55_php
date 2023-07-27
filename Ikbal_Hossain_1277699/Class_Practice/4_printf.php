@@ -8,7 +8,10 @@
 </head>
 
 <body>
+
     <?php
+    // So, the sprintf() function can be used for both printing the output and sending the formatted output to a variable, making it a versatile function for string formatting in PHP.
+    
     $districts_number = 64;
 
     printf("Bangladesh has %d District", $districts_number);
