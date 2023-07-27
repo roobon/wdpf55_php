@@ -7,12 +7,12 @@
     // Search array for authentication match
     foreach ($authFile as $line) {
     list($user, $hash) = explode(":", $line);
-    if ($_SERVER['PHP_AUTH_USER'] == $user &&
-    password_verify($_SERVER['PHP_AUTH_PW'], trim($hash)))
+    if ($_SERVER['PHP_AUTH_USER'] == $user || $_SERVER['PHP_AUTH_PW'] == trim($hash) )
+    
+    //password_verify($_SERVER['PHP_AUTH_PW'], trim($hash)))
     $authorized = true;
     break;
     }
-
     /// If not authorized, display authentication prompt or 401 error
     // If (!$_SERVER['HTTPS']) {
     // echo " Please use HTTPS when accessing this document";
