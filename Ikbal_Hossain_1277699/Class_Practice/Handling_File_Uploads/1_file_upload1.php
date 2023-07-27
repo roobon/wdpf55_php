@@ -10,14 +10,14 @@
 <body>
     <?php
     if (isset($_POST["submit"])){
-        echo "<pre>"
+        // echo "<pre>";
         // print_r($_POST);
         // print_r($_FILES);
         $name = $_FILES["profile"]["name"];
         $temp = $_FILES["profile"]["tmp_name"];
         $path = "upload/";
         if(move_uploaded_file($temp, $path.$name)){
-            echo "$name file uploaded"
+            echo "$name file uploaded";
         }
     }
       
