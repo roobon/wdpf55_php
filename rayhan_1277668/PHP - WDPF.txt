@@ -277,13 +277,23 @@ print_r($sliced) ;
 ========================= OOP PHP =============================
 
 
-17. class er vitor  
+1. class er vitor  
 	variable = property 
     	Function = method
 
 *** Use the "extends" keyword to inherit all methods from another class.
 
     Use the "super" method to call the parent's constructor function.
+
+
+
+
+2. * calling the parent class constructor in child class.
+
+In JavaScript, you use 	= super() 
+       in PHP, you use 	= parent::__construct() 
+
+
 
 
 
