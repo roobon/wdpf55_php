@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        Name : <input type="text" name="name"><br><br>
+        Contact : <input type="text" name="contact"><br><br>
+        Remarks : <textarea name="remarks" id="" cols="30" rows="5"></textarea><br><br>
+        Sex : <br>
+        Male : <input type="radio" name="sex" value="male">
+        Female : <input type="radio" name="sex" value="female"><br><br>
+       
+        Location : <select name="location"><br>
+          <option value="">Select One</option><br>
+          <option>Banani</option>
+          <option>Dhanmondi</option>
+          <option>Mirpur</option>
+        </select><br><br>
+  
+        Courses: <br>
+        NT :<input type="checkbox" name="nt" value="NT" class="course">
+        IAD :<input type="checkbox" name="iad" value="IAD" class="course">
+        DDD :<input type="checkbox" name="ddd" value="DDD" class="course">
+        ESAD :<input type="checkbox" name="esad" value="ESAD" class="course">
+        <button type="button" onclick="display()">Show in a new window</button>
+      </form>
+  
+      <script>
+          function display(){
+              let name = document.myform.name.value;
+              let contact = document.myform.contact.value;
+              let remarks = document.myform.remarks.value;
+              let sex = document.myform.sex.value;
+              let location = document.myform.location.value;
+              const course = document.getElementsByClassName("course");
+              let courses = "";
+              for(let i=0; i<course.length; i++){
+                  if(course[i].checked){
+                  courses += course[i].value + ",";
+                  }
+              }
+  
+              let mywindow = window.open("", "", "height=300, width=400");
+          let message = "";
+          message += "<h1>Name: " + name + " "  + "<h1>";
+          message += "<p>Contact: " + contact +  "</p>";
+          message += "<p>Remarks: " + remarks +  "</p>";
+          message += "<p>Location : " + location +  "</p>";
+          message += "<p>Courses : " + courses +  "</p>";
+  
+          mywindow.document.write(message)
+          }
+        
+      </script>
+</body>
+</html>
