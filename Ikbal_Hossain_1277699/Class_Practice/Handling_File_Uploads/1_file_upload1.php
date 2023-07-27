@@ -15,9 +15,12 @@
         // print_r($_FILES);
         $name = $_FILES["profile"]["name"];
         $temp = $_FILES["profile"]["tmp_name"];
+        $size = $_FILES["profile"]["size"];
+        $sizeMb = $size / 1024 / 1024;
+        $sizeMb = round($sizeMb, 2);
         $path = "upload/";
         if(move_uploaded_file($temp, $path.$name)){
-            echo "$name file uploaded";
+            echo "$name ($sizeMb MB) file uploaded";
         }
     }
       
