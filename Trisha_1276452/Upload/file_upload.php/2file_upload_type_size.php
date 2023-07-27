@@ -33,9 +33,11 @@ if (isset($_POST['submit'])){
         }
 
     }else{
+        echo "<ul>";
         foreach($error as $err){
-            echo $err."<br>";
+            echo"<li> $err</li>";
         }
+        echo "</ul>";
     }
 }
 
