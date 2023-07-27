@@ -11,7 +11,7 @@
     echo $line;
     echo "<br>";
 
-    $tabbedline = "Name \t\t Address \t Phone \t";
+    $tabbedline = "Name \t\t Address \t Phone \t";  
     echo $tabbedline;
     echo "<br>";
 

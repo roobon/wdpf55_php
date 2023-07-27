@@ -16,6 +16,8 @@ class FileClass {
             echo "  Name: $name  -
                     Email: $email -
                     Phone: $phone <br> 
+
+                    
             " ;
         }
     }
@@ -25,4 +27,5 @@ class FileClass {
 $mydata = new FileClass("users.txt") ;
 $mydata->readData() ;
 
-?>
+?>    
+
