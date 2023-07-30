@@ -33,6 +33,7 @@
 
         }
     ?>
+    
     <form action="" method="post">
         <input type="text" name="email" placeholder="Enter your Email"><br>
         <input type="password" name="password" placeholder="Enter your Password"><br>
