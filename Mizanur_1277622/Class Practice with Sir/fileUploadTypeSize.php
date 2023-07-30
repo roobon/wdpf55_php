@@ -11,8 +11,8 @@
     <?php
     if (isset($_POST['submit'])) {
         echo "<pre>";
-        print_r($_POST);
-        print_r($_FILES);
+        //print_r($_POST);
+        //print_r($_FILES);
         $name = $_FILES["file"]["name"];
         $temp = $_FILES["file"]["tmp_name"];
         $size = $_FILES["file"]["size"];
@@ -29,17 +29,13 @@
                 echo "$name is uploaded and size is $size";
             } else {
                 foreach ($error as $err) {
-                    echo $err . "<br>";
+                    echo $err;
                 }
             }
         }
     }
     ?>
     <form action="" enctype="multipart/form-data" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" name="name"><br>
-        <label for="email">Email:</label><br>
-        <input type="text" name="email"><br>
         <input type="file" name="file"><br>
         <input type="submit" name="submit" value="Upload">
     </form>
