@@ -16,23 +16,26 @@
 
         function validation($email, $pass){
             $error = [];
-            $valid =  false;
+            $msg = "";
             if($email == '' || $pass == ''){
                 return "Must be entered email and password";
-           } 
-                if(!filter_var($email, FILTER_VALIDATE_EMAIL)){  
+                } 
+            if(!filter_var($email, FILTER_VALIDATE_EMAIL)){  
                     $error[]= "INVALID email<br>";       
                 }
                 $passlength = strlen($pass);
-                if(!$passlength<=8 && !$passlength>=4){    
-                    $error[]="Use password 4 to 8 character<br>";   
+            if(($passlength<=8) && ($passlength>=4)){    
+                     "All are ok";
+                } else {
+                    $error[]="Use password 4 to 8 character<br>";  
                 }
 
-            if(!empty($error)){
+            if(!empty($error)){ 
                 foreach($error as $err){
-                    $err;
+                    $msg .= $err;
                }
-               return $err;
+               return $msg;
+               
                 
             } else {
                 return "All are validated";
