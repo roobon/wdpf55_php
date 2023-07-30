@@ -24,11 +24,11 @@
            echo "<hr>";
 
 
-           $prices = array("Dhaka"=>200,"Khulna"=>250,"Cumilla"=>260 );
+           $Pprices = array("Dhaka"=>200,"Khulna"=>250,"Cumilla"=>260 );
            echo "<pre>";
-           print_r($prices);
+           print_r($Pprices);
             echo "<ul>";
-           foreach($prices as $city=>$price){
+           foreach($Pprices as $city=>$price){
             echo "<li>" . $city . ":" . $price ."</li>";
 
            }
