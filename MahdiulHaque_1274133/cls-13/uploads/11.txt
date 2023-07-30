@@ -1,0 +1,2 @@
+multiple inheritance,clone,interface,abstract class,class and object descriptitve,encapsulation and inheritance descriptive, 
+ polyforphisom descriptitve.

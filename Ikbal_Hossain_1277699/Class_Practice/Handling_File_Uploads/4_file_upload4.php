@@ -38,6 +38,7 @@
     }
 
     ?>
+    
 
     <form action="" enctype="multipart/form-data" method="post"> <br>
         <input type="text" name="name" placeholder="Enter Name"> <br>
