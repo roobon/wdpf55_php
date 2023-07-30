@@ -32,7 +32,7 @@
             $allowType = array("jpg","png","jpeg","bmp");
 
             if(!in_array($ext, $allowType)){
-                $error[] = "jpg, png , jpeg, bmp files are allow & ";
+                $error[] = "jpg, png, jpeg, bmp files are allow";
             }
 
             if($size>$allowsize){
