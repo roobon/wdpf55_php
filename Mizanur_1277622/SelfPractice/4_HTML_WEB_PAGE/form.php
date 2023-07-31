@@ -12,7 +12,7 @@
 <body>
     <h3 class="container text-center mt-5 bg-info text-dark">Student Information</h3>
     <div class="container">
-        <form action="formData.php" method="post">
+        <form action="formData.php" target="_blank" method="post">
             <div class="row mb-3">
                 <div class="col">
                     <input type="text" name="name" placeholder="Enter Your Full Name" class="form-control">
