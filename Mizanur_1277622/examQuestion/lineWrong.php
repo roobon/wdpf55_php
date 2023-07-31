@@ -5,5 +5,5 @@ do{
     $value = $value+2;
     $count = $value*$count;
 } while($count <= 12) 
-    echo "Value = $value"; 
+    //echo "Value = $value"; 
 ?>
