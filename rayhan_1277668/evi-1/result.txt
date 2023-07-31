@@ -1,0 +1,6 @@
+1 , Rayhan , 55 , Pass
+2 , Khayrul , 15 , Fail
+3 , Alam , 59 , Pass
+4 , Abul , 19 , Fail
+5 , Kalam , 29 , Fail
+6 , Azad , 49 , Pass
