@@ -13,7 +13,7 @@
             for($i=1; $i<$mynum; $i++){
             $output = $output * $i ;
         }
-        echo "{$output}'s Factorial number is :{$output}";
+        echo "{$mynum}'s Factorial number is :{$output}";
         }
 
         //echo $output;

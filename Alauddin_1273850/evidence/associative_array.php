@@ -24,6 +24,4 @@
     // echo "Topper Student is $maxKey<br>";
     // echo "Hightest Score is $maxValue";
 
-
-
 ?>
