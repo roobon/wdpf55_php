@@ -24,7 +24,7 @@
             return " 2 is a prime number" ;
         } else {
             for ( $i = 2; $i < $number ; $i++ ) { 
-                if ( $number % $i ==0  ) {
+                if ( $number % $i == 0 ) {
                     return  " $number is not a prime number" ;
                 }
             } 
