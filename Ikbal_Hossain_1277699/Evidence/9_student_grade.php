@@ -10,9 +10,10 @@
 <body>
     <?php
 
-    if(isset($_POST["submit"])){
-        $grade = $_POST["grade"];
+        if(isset($_POST["submit"])){
 
+        $letter = strtoupper($_POST["letter"]);
+        $grade = $letter;
         // $grade = array("A", "B", "C", "D", "F");
         if ($grade == "A") {
             echo "excellent";
@@ -29,8 +30,8 @@
        
     ?>
 
-    <form action="">
-        <input type="text" name="grade" placeholder="Enter A, B, C, D, E, F ">
+    <form action="" method="post">
+        <input type="text" name="letter" placeholder="Enter A, B, C, D, E, F ">
         <input type="submit" name="submit" value="CHECK">
     </form>
 </body>
