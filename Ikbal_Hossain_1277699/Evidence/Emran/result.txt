@@ -1,6 +1,0 @@
-1, Masum ,55, Pass
-2, Ikbal ,55, Pass
-3, Imran ,55, Fail
-4, Mahadiul ,55, Pass
-5, Sadid ,55, Fail
-6, Shakib ,55, Pass
