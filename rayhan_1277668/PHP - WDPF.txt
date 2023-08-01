@@ -229,7 +229,7 @@ $reversed = array_reverse($numbers) ;   // main array ke change kore na. new arr
 23. asort () rsort() Ksort()
 
 $numbers = array(25,7,86,10,5,30);		= serial onujaye sorting kore (assosiation thik rekhe).
-asort($numbers) ;
+asort($numbers) ;				= 
 rsort($numbers);				= reverse korebe (assosiation thik rekhe)
 
 
