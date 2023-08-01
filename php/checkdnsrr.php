@@ -1,6 +1,6 @@
 <?php
 $domain = "prothomalo.com";
-$recordexists = checkdnsrr($domain, "CNAME");
+$recordexists = checkdnsrr($domain, "MX");
 if ($recordexists)
 echo "The domain '$domain' has a DNS record!";
 else
