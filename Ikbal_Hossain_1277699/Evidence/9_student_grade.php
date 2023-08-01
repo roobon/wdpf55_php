@@ -23,10 +23,11 @@
             echo "fair";
         } else if ($grade == "D") {
             echo "poor";
-        } else {
+        } else if ($grade == "E")
             echo "failure";
+        } else {
+            echo "Invalid Input";
         }
-    }
        
     ?>
 
