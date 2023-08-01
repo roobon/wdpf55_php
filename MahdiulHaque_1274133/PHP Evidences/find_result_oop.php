@@ -1,11 +1,11 @@
 <?php 
   // Class
   class Student {
-    private $data;
-    function __construct($x){
+    private $data; // Property
+    function __construct($x){  // CONSTRUCTOR
         $this->data = $x;
     }
-    function showResult($y){
+    function showResult($y){ // Method
         $rawData = file($this->data);
         foreach($rawData as $line){
             list($id, $name, $batch, $result)   = explode("," , $line);
@@ -15,7 +15,7 @@
         }
     }
   }  // End of Class
-   $st = new Student("result.txt"); // Create Object
+   $st = new Student("result.txt"); // Create Object with a parameter
 ?>
 
 

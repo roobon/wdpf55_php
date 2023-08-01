@@ -7,12 +7,12 @@
 </head>
 <body>
     <form action="actionpage.php">
-        <input type="text" name="fullname"><br>
-        <input type="text" name="email"><br>
-        <input type="number" name="phone"><br>
+        Name: <input type="text" name="fullname"><br>
+        Email: <input type="text" name="email"><br>
+        Phone: <input type="number" name="phone"><br>
         
            
-            <textarea name="address" id="" cols="30" rows="10"></textarea>
+          Address:  <textarea name="address" id="" cols="30" rows="10"></textarea>
             <input type="submit" name="submit">
         
     </form>
