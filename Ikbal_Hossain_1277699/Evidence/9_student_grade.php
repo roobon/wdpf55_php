@@ -30,7 +30,7 @@
     ?>
 
     <form action="">
-        <input type="text" name="grade" placeholder="Enter your grade">
+        <input type="text" name="grade" placeholder="Enter A, B, C, D, E, F ">
         <input type="submit" name="submit" value="CHECK">
     </form>
 </body>
