@@ -29,7 +29,6 @@ if(in_array($letter,$vowels)){
 }
 }
 
-
 ?>
 </form>
 </body>
