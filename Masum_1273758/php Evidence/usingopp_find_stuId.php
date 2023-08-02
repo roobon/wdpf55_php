@@ -46,31 +46,41 @@
         <input type="text" name="id">
         <input type="submit" name="submit" value="RESULT">
     </form> -->
-    <?php 
+ <?php 
     class student{
         public $id;
         public $name;
         public $batch;
         public $data;
         public function __construct($x){
-          $this->data= file($x);
+                $this->data=file($x);
         }
-        function result($id){
-            foreach($this->data as $line){
-                list($stid)= explode(",",$line);
+        public function result($id){
+            foreach($this->data as $item){
+                list($stid,$name,$batch)= explode(",",$item);
                 if($stid==$id){
-                    echo "$line";
+                    echo "$stid. $name.$batch";
                 }
             }
         }
         
+            
+        
     }
-    // $obj =new student("result.txt");
-    // // $obj->result();
-    ?>
-    <form action="">
-        <input type="text" name="id">
-        <input type="text">
+    // $obj1 = new student("result.txt");
+    // $obj1->result(4);
+ ?>
+ <?php 
+ if(isset($_POST['submit'])){
+   $value = $_POST['displayResult'];
+   $obj1 = new student('result.txt');
+   $obj1->result($value);
+ }
+ ?>
+    <form action="" method="post">
+        <input type="text" name="displayResult" placeholder="Enter your ID">
+        <input type="submit" name="submit" value="CHECK">
+
     </form>
 </body>
 </html>
