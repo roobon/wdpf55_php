@@ -1,7 +1,7 @@
 <?php 
     //echo hash('md5', 'abcd'); //sha1, md5
 
-    $secret = 'e5e9fa1ba31ecd1ae84f75caaa474f3a663f05f4';
+    $secret = 'e2fc714c4727ee9395f324cd2e7f331f';
     if (($_SERVER['PHP_AUTH_USER'] != 'client') ||
     (hash('sha1', $_SERVER['PHP_AUTH_PW']) != $secret)) {
     header('WWW-Authenticate: Basic Realm="Secret Stash"');

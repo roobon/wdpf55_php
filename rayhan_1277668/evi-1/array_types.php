@@ -9,7 +9,7 @@ echo "<hr>" ;
 
 
 // assosiative array
-$associative_array = [ "Bat"=>5000 , " Ball"=>50 , "Stamp" => 200  ];
+$associative_array = [ "Bat"=>5000 , "Ball"=>50 , "Stamp" => 200  ];
 echo "Numberic Array" ;
 echo "<pre>" ;
 print_r($associative_array) ;
