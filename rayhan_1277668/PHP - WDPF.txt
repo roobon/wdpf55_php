@@ -51,6 +51,40 @@ require ("header.php");			= file na pele execution stop hoye jabe.
 
 
 
+11. ini_set('display_errors', 0) ; 	= This function nitialize the php.ini feature in the current page. It shows no errors. 
+
+
+
+
+
+====================================  Regular expression ===========================================
+
+
+
+
+
+1. if (preg_match("/\bVim\b/i", $line, $match)) print "Match found!";		= string er moddhe theke first match ta khujbe.
+	* preg_match_all ()  							= all match gula show korbe.
+
+
+2. $food = preg_grep("/^p/", $foods);	= array er moddhe theke khujbe.
+
+
+3. preg_replace()
+
+$draft = "In 2010 Spain won the world cup.";
+$keywords = array("/2010/", "/spain/i");
+$replacements = array("2022", "Argentina");
+echo preg_replace($keywords, $replacements, $draft);		= keyword gula khuje replace kore dibe.
+
+
+
+4. 
+
+
+
+
+
 ======================================= Array ======================================== 
 
 
