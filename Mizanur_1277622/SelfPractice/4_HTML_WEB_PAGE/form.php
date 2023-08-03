@@ -12,7 +12,7 @@
 <body>
     <h3 class="container text-center mt-5 bg-info text-dark">Student Information</h3>
     <div class="container">
-        <form action="formData.php" target="_blank" method="post">
+        <form action="formData.php" target="_blank" method="post" enctype="multipart/form-data">
             <div class="row mb-3">
                 <div class="col">
                     <input type="text" name="name" placeholder="Enter Your Full Name" class="form-control">
@@ -29,6 +29,10 @@
                 <div class="col">
                 <input type="address" name="address" class="form-control" placeholder="Enter Your Address">
                 </div>
+            </div>
+
+            <div class="mb-1">
+                <input type="file" class="form-control" name="photo"><br>
             </div>
 
             <div>

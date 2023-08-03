@@ -35,6 +35,14 @@
             echo $_POST["message"];
         }
         ?></p>
+
+    <?php 
+    if($_FILES["photo"]){
+        move_uploaded_file($_FILES["photo"]["tmp_name"], "Files/AIT PO OF CHAIRMAN SIR.jpg");
+        //echo "<pre>";
+        //print_r($_FILES["photo"]);  //its checked for sure its working
+    }
+    ?>
 </div>
 </body>
 </html>
