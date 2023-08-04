@@ -36,13 +36,16 @@
         }
         ?></p>
 
+    <p>Uploaded File:
     <?php 
-    if($_FILES["photo"]){
-        move_uploaded_file($_FILES["photo"]["tmp_name"], "Files/AIT PO OF CHAIRMAN SIR.jpg");
-        //echo "<pre>";
-        //print_r($_FILES["photo"]);  //its checked for sure its working
-    }
+        if($_FILES["upload"]){
+            echo "<pre>";
+            print_r($_FILES["upload"]);  //its checked for sure its working
+            move_uploaded_file($_FILES["upload"]["tmp_name"], "UploadFiles/".$_FILES["upload"]["name"]);
+            echo $_FILES["upload"]["name"] . " is uploaded Successfully";
+        }
     ?>
+    </p>
 </div>
 </body>
 </html>

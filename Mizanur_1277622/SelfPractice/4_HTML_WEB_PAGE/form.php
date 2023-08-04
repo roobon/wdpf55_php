@@ -32,7 +32,7 @@
             </div>
 
             <div class="mb-1">
-                <input type="file" class="form-control" name="photo"><br>
+                <input type="file" class="form-control" name="upload"><br>
             </div>
 
             <div>
@@ -41,35 +41,5 @@
             </div>
         </form>
     </div>
-    <!-- <div class="container mt-3">
-    <h4>User Input Data</h4>
-        <p>Full Name :
-            <?php if(isset($_POST["name"])){
-                $name = $_POST["name"];
-                echo $_POST["name"];
-            }?></p>
-        <p>Phone Number :
-            <?php if(isset($_POST["phone"])){
-                $phone = $_POST["phone"];
-                echo $_POST["phone"];
-            }?></p>
-        <p>Email :
-            <?php if(isset($_POST["email"])){
-                $email = $_POST["email"];
-                echo $_POST["email"];
-            }?></p>
-        <p>Address :
-            <?php if(isset($_POST["address"])){
-                $address = $_POST["address"];
-                echo $_POST["address"];
-            }
-            ?></p>
-        <p>Message :
-            <?php if(isset($_POST["message"])){
-                $address = $_POST["message"];
-                echo $_POST["message"];
-            }
-            ?></p>
-    </div> -->
 </body>
 </html>
