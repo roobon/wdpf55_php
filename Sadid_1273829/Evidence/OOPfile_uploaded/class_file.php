@@ -14,20 +14,20 @@
 
         public function do_Upload(){
             $path = "upload/";
-            $err = array();
-            $limit = 1105400; // 100kb
+            $error = array();
+            $limit = 105400; // 100kb
 
             if($this->size > $limit){
-                $err[] = "You can upload within 100kb size.";
+                $error[] = "You can upload within 100kb size.";
             }
 
-            if (empty($err)) {
+            if (empty($error)) {
                 move_uploaded_file($this->tmpname, $path.$this->name);
                 echo "<h1>File Uploaded Suuccessfully.</h1>";
             }
             else {
-                foreach ($err as $error) {
-                    echo $error . "<br>";
+                foreach ($error as $err) {
+                    echo $err . "<br>";
                 }
             }
         }
