@@ -1,25 +1,35 @@
 <?php
     class FileClass{
         public $image;
+        public $name;
         public $size;
+        public $tmpname;
 
         public function __construct($file){
             $this->image = $file;
+            $this->name = $this->image['name'];
+            $this->size = $this->image['size'];
+            $this->tmpname = $this->image['tmp_name'];
         }
-
-        // function checkdata(){
-        //     echo "<pre>";
-        //     print_r($this->image);
-        // }
 
         public function do_Upload(){
             $path = "upload/";
-            
-            $name = $this->image['name'];
+            $err = array();
+            $limit = 1105400; // 100kb
 
-            $temp_name = $this->image['tmp_name'];
+            if($this->size > $limit){
+                $err[] = "You can upload within 100kb size.";
+            }
 
-            move_uploaded_file($temp_name, $path.$name);
+            if (empty($err)) {
+                move_uploaded_file($this->tmpname, $path.$this->name);
+                echo "<h1>File Uploaded Suuccessfully.</h1>";
+            }
+            else {
+                foreach ($err as $error) {
+                    echo $error . "<br>";
+                }
+            }
         }
     }
 ?>
