@@ -3,6 +3,11 @@ $info = pathinfo("F:\Mizanur_Rahman_1277622\XAMPP\htdocs\wdpf55_php\Mizanur_1277
 echo "<pre>";
 print_r($info);
 
-echo $info['basename'];
+printf("Dir name: %s <br />", $info['dirname']);
+printf("Base name: %s <br />", $info['basename']);
+printf("Extension: %s <br />", $info['extension']);
+printf("Filename: %s <br />", $info['filename']);
+
+//echo $info['basename'];
 
 ?>
