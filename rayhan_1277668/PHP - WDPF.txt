@@ -1,4 +1,10 @@
+
+
+************************** Basic PHP *****************************
+
+
 1. xamp / htdocks 	- ai folder e shob website raakhte hobe.
+
 
 2.  PHP Configs   
 
@@ -9,7 +15,9 @@
    * <?= "Hello this is short circuit"		= short circuit (echo er poriborte use hoy).
      ?>
 
+
 4. https://pear.php.net/  	=  php opensource library
+
 
 5.  <?php 
     echo $x , $y ;		= echo - single line e result show kore .
@@ -57,7 +65,7 @@ require ("header.php");			= file na pele execution stop hoye jabe.
 
 
 
-====================================  Regular expression ===========================================
+====================================  Regular expression & String  ===========================================
 
 
 
@@ -79,10 +87,91 @@ echo preg_replace($keywords, $replacements, $draft);		= keyword gula khuje repla
 
 
 
-4. 
+4. n12br($var) 	= create new lines if you give in the string.
 
 
 
+5. htmlentities()
+
+$advertisement = "Coffee at 'Cafè Française' costs $2.25.  100<200";
+echo htmlentities($advertisement , ENT_QUOTES); 			= Convert some characters to HTML entities (view in page source)
+
+
+
+
+6. strip_tags() 
+
+echo $input =  "Email <a href='www.hackme.com'> Get Hacked </a>" ;
+echo " <br> " ;
+echo strip_tags($input) ;			= removes any HTML, XML, and PHP tags.
+
+
+
+
+7. strpos()
+echo strpos("I love php, I love php too!","php");	= give string position from first.
+     strrpos()						= give string position from last.
+
+
+
+8. implode() 
+$cities = array("Dhaka", "Noakhali", " Monitor", "water", "tea", "Bottle") ;
+$mycitites =  implode(' , ' , $cities)  ;					= convert array into string
+
+
+
+
+
+9. substr()
+$msg = "I annoy people by capitalizing e-mail text. " ;
+echo substr($msg, 8 , 6);							= start to end string.
+
+
+
+
+
+10. trim()									= remove gaps/space for string.
+    ltrim()
+    rtrim()
+
+
+
+
+========================================= File & operating system ====================================
+
+
+
+1.disk_free_space()
+
+$dir = "c:/" ;
+$bytes = disk_free_space($dir) ;		= show the available disk free space.
+
+
+
+
+
+2.fileatime()  filectime()   filemtime()
+
+ini_set('date.timezone' , 'Asia/Dhaka') ;
+
+
+$file = 'files.txt' ;
+$atime = fileatime($file);				= show file access time
+$ctime = filectime($file);				= show file mode / change time 
+$mtime = filemtime($file);				= show file mdified time
+
+
+echo "Access Time: " .date("h:i:s", $atime). "<br>" ;
+echo "Changed Time: " .date("h:i:s", $ctime). "<br>" ;
+echo "Modified Time: " .date("h:i:s", $mtime). "<br>" ;
+
+
+
+
+
+
+
+			
 
 
 ======================================= Array ======================================== 
@@ -170,7 +259,7 @@ echo array_search(35, $age)
 
 $ages = array("Masum" => 20 , "imran" => 21 , "Molla"=> 23 ) ;	
 
-$students = array_keys($ages); 			= akta array er key niye sudhu key gula akta new array te show korbe.
+$students = array_keys($ages); 			= key gula akta new array te show korbe.
 $numbers = array_values($ages);			= sudhu values gula show korbe.
 
 echo "<pre>" ;
@@ -308,7 +397,7 @@ print_r($sliced) ;
 
 
 
-========================= OOP PHP =============================
+================================= OOP PHP ====================================
 
 
 1. class er vitor  
