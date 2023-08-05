@@ -7,10 +7,32 @@
     fclose($fh);
 ?> -->
 
-<?php 
+<!-- <?php 
     $filepath = "Upload/test.txt";
     $fh = fopen($filepath, "r");
     echo fgets($fh);
 
     fclose($fh);
-?>
+?> -->
+
+<!-- <?php 
+    $filepath = "test.txt";
+    $fh = fopen($filepath, "r");
+    while(!feof($fh)){
+        echo fgets($fh) . "<br>";
+    }
+
+    fclose($fh);
+?> -->
+
+
+<!-- <?php 
+    $filepath = "test.txt";
+    $fh = fopen($filepath, "a+");
+    while(!feof($fh)){
+        echo fgets($fh) . "<br>";
+    }
+    fwrite($fh, "\n Adding another line");
+
+    fclose($fh);
+?> -->
