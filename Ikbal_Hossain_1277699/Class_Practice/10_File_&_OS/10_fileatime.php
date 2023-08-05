@@ -1,6 +1,6 @@
 <?php
     ini_set("date.timezone", "Asia/Dhaka");
-    $file = D:\Upload;
+    $file = "../Class_Object/score.txt";
     
     $atime = fileatime($file);
     $ctime = fileatime($file);
