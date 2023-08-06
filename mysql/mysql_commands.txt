@@ -15,7 +15,24 @@ CREATE TABLE users (
   address VARCHAR(200) NULL,
   phone VARCHAR(20) NOT NULL,
   dob DATE	
-) ENGINE=INNODB
+) ENGINE=INNODB;
+
+//INSERT Query
+INSERT INTO users (id, name, address, phone, dob) VALUES (
+	NULL, 'Masum', 'Mirpur', '0147523698', '2015-05-03'
+)
+INSERT INTO users VALUES (
+	NULL, 'Rojoni', 'Mirpur', '0147523698', '2015-05-03'
+)
+
+//SELECT Query
+SELECT * FROM users; // all fields
+SELECT id, name, address FROM users; // selected fields
+
+
+
+
+
 
 
 
