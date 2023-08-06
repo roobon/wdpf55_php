@@ -1,20 +1,27 @@
 <?php
 
-function printGradeDescription($grade)
+function getGradeDescription($grade)
 {
     if ($grade === 'A') {
-        echo "Excellent";
+        return "Excellent";
     } elseif ($grade === 'B') {
-        echo "Good";
+        return "Good";
     } elseif ($grade === 'C') {
-        echo "Fair";
+        return "Fair";
     } elseif ($grade === 'D') {
-        echo "Poor";
+        return "Poor";
     } elseif ($grade === 'F') {
-        echo "Fail";
+        return "Fail";
     } else {
-        echo "Invalid grade";
+        return "Invalid grade";
     }
+}
+
+$output = '';
+
+if (isset($_POST['submit'])) {
+    $grade = strtoupper($_POST['grade']);
+    $output = getGradeDescription($grade);
 }
 
 ?>
@@ -30,18 +37,15 @@ function printGradeDescription($grade)
 
 <body>
 
-
-
     <h2>Grade Description</h2>
-    <?php if (isset($_POST['submit'])) {
-        $grade = strtoupper($_POST['grade']);
-        printGradeDescription($grade);
-    }
-    ?>
     <form action="" method="post">
         <input type="text" name="grade" maxlength="1" placeholder="Enter grade (A, B, C, D, F)">
         <input type="submit" value="Check" name="submit">
     </form>
+
+    <?php if (!empty($output)) { ?>
+        <h3><?php echo $output; ?></h3>
+    <?php } ?>
 
 </body>
 
