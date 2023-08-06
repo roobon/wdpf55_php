@@ -1,3 +1,4 @@
 <?php 
-$fh = fopen("usersss.txt", "r")
+$fh = fopen("my.txt", "r");
+
 ?>
