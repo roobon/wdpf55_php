@@ -12,8 +12,6 @@
 function checkLetter ($x) {
     $vowel = ["a" , "A" , "e" , "E", "i" , "I", "o", "O", "u", "U"  ] ;
 
-    
-
     if (in_array( $x , $vowel)) {
         echo  "This is vowel" ;
     } else {
