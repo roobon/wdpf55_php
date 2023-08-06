@@ -17,7 +17,7 @@
         function doUpload(){
             $path = "uploads/";
             $error = array();
-            $limit = 102400; //100KB
+            $limit = 102400; //100kb
             if($this->size > $limit){
                 $error[] = "<h1 style='color:red' h1>Maximum size 100 kb</h1>";
             }

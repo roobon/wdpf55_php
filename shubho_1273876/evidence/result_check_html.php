@@ -17,13 +17,6 @@ function getGradeDescription($grade)
     }
 }
 
-$output = '';
-
-if (isset($_POST['submit'])) {
-    $grade = strtoupper($_POST['grade']);
-    $output = getGradeDescription($grade);
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -38,15 +31,17 @@ if (isset($_POST['submit'])) {
 <body>
 
     <h2>Grade Description</h2>
+    <?php
+    if (isset($_POST['submit'])) {
+        $grade = strtoupper($_POST['hello']);
+        $gradeDescription = getGradeDescription($grade);
+        echo "<h3>" . $gradeDescription . "</h3>";
+    }
+    ?>
     <form action="" method="post">
-        <input type="text" name="grade" maxlength="1" placeholder="Enter grade (A, B, C, D, F)">
+        <input type="text" name="hello" maxlength="1" placeholder="Enter grade (A, B, C, D, F)">
         <input type="submit" value="Check" name="submit">
     </form>
-
-    <?php if (!empty($output)) { ?>
-        <h3><?php echo $output; ?></h3>
-    <?php } ?>
-
 </body>
 
 </html>
