@@ -57,10 +57,7 @@ echo " Conntected succeccfully. ";
 
 
             
-             . "<br>" ;
-            . "<br>" ;
-             . "<br>" ;
-
+           
         <?php } ?>
 
     </table>
