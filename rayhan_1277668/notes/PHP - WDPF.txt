@@ -63,6 +63,10 @@ require ("header.php");			= file na pele execution stop hoye jabe.
 
 
 
+**** data / user input neyar age sanitization/sanitize korte hobe. *****
+
+
+
 
 
 ====================================  Regular expression & String  ===========================================
@@ -171,7 +175,44 @@ echo "Modified Time: " .date("h:i:s", $mtime). "<br>" ;
 
 
 
+
+=========================================== Date & time ==================================
+
+1.checkdate()								= check a date if it's valid or not.
+ echo checkdate( 2, 29, 2020 ) ? "Leap year" : "Not leap year" ;
+
+
+2.
+
+
+
+
+
+
+=========================================== Session ==================================
+
+1. session_start() ;				= session niye kaj korte gele session function start korte hobe.
+
+
+** php.ini - session.cache_expire=180		=  180 min por session close hoye jabe. **
+
 			
+
+
+
+=========================================== security ==================================
+
+1. disable_functions				= this is disable the required functions.
+
+
+
+
+
+
+
+
+
+
 
 
 ======================================= Array ======================================== 
