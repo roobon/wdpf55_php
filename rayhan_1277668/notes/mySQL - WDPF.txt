@@ -1,0 +1,6 @@
+
+
+1. mysql -h localhost -u root -p
+2. show databases;
+3. create database wdpf_55;
+4.
