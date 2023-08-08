@@ -1,0 +1,5 @@
+ 
+ fwrite text 
+ fwrite text 
+ fwrite text 
+ fwrite text
