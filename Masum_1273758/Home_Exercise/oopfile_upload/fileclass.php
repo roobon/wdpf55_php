@@ -12,13 +12,18 @@ class FileClass{
         $this->size=$this->image['size'];
         $this->tmpName=$this->image['tmp_name'];
         $array =explode(".",$this->name);
+        $this->ext = end($array);
     }
     public function doUpload(){
         $path = "uploads/";
         $errors = array();
-        $limit =204800; // 200kb
+        $limit =104800; // 200kb
         if($this->size>$limit){
-         $errors[] ="you can upload with in 200kb";
+         $errors[] ="uploaded failed.you can upload with in 200kb";
+        }
+        $allowedTypes =["jpg","png","jpeg"];
+        if(!in_array($this->ext,$allowedTypes)){
+            $errors[]="upload failed.File must be jpg/jpeg/png";
         }
         if(empty($errors)){
             if(move_uploaded_file($this->tmpName,$path.$this->name)){
