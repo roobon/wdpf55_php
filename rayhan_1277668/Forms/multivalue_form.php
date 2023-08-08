@@ -40,10 +40,10 @@ if ( isset( $_POST['name'] ) ) {
 </select> <br>
 
 Hobbies: <br>
-<input type="checkbox" name="hobbies[]"> Cricket <br>  
-<input type="checkbox" name="hobbies[]"> Football <br>  
-<input type="checkbox" name="hobbies[]"> Gaming <br>  
-<input type="checkbox" name="hobbies[]"> Tiktok <br>  <br>
+<input type="checkbox" value="Cricket" name="hobbies[]"> Cricket <br>  
+<input type="checkbox" value="Football" name="hobbies[]"> Football <br>  
+<input type="checkbox" value="Gaming" name="hobbies[]"> Gaming <br>  
+<input type="checkbox" value="Tiktok" name="hobbies[]"> Tiktok <br>  <br>
 
 <input type="submit" value="Submit" >
 </form>
