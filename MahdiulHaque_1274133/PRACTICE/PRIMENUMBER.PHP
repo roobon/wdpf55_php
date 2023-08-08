@@ -15,13 +15,13 @@
    <?php
    if(isset($_REQUEST["submit"])){
     $my number = $_REQUEST["number"];
-
+                                           //dekhte hobe
 
     function checkPrime($number)
     if($number == 0){
         return "Never inpu footikar
         "
-    }
+    }fggg
    }
    
    ?>
