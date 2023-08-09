@@ -15,6 +15,14 @@ function showResult($n,$m){
     $array2 = array("Bangladehs","Inadia","Pakistan","Maldiv","Nepal","Butan","USA");
     $result =array_map("showResult",$array1,$array2);
     print_r($result);
+    echo "<hr>";
+function show_result($x,$y){
+        return("The number is $x is callled name of country $y");
+}
+$a  =array(1,2,3,4,5,6,7);
+$b =array ("Bangladesh","Indai","Paksitan","Maldiv","Netherland","Nepal","USA");
+$c=( array_map("show_result",$a,$b));
+print_r($c);
 
 
 ?>
