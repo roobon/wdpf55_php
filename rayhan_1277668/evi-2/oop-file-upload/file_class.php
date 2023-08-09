@@ -5,14 +5,15 @@ class FileClass
     public $name;
     public $size;
     public $tmpName;
-
+    public $ext ;
     public function __construct($file)
     {
         $this->image = $file;
         $this->name = $this->image['name'];
         $this->size = $this->image['size'];
         $this->tmpName = $this->image['tmp_name'];
-
+        $array = explode(".", $this->name) ;
+        $this->ext = end($array) ;
         // echo "<pre>" ;
         // print_r($this->image) ;
     }
@@ -22,9 +23,14 @@ class FileClass
     {
         $path = "upload/";
         $errors = [];
-        $limits = 102400; // 100 kb 
+        $limits = 40800; // 400 kb 
         if ($this->size > $limits) {
-            $errors[] = "File size Limited within 100KB";
+            $errors[] = "Upload Failed. File size Limited within 100KB";
+        }
+
+        $allowedTypes = ["jpg", "png", "jpeg"];
+        if(!in_array($this->ext, $allowedTypes)){
+            $errors[] = " Upload failed. File must be jpg/jpeg/png ";
         }
 
         if (empty($errors)) {
