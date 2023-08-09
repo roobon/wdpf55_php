@@ -12,18 +12,26 @@
     <?php 
         if(isset($_POST["email"])){
             $email = $_POST["email"];
+            $password = $_POST["password"];
             // echo $email;
-            if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-                echo "Email address is Valid";
+           
+
+            $pattern = '/^[a-zA-Z0-9]{4,8}@([a-zA-Z0-9]+\.)+[a-zA-Z]{2,4}$/';
+            
+            if (preg_match($pattern, $email)) {
+                echo "Successfully login";
             } else {
-                echo "Email address is Invalid";
+                echo "Invalid email format. Username must be 4 to 8 character";
             }
+            
+            
         }
       
     ?>
     <form action="" method="post">
-        <input type="text" name="email" placeholder="Enter email address">
-        <input type="submit" name="submit" value="VALIDATE">
+        Email: <input type="text" name="email" placeholder="Enter email address"> <br>
+        Password: <input type="password" name="password" placeholder="Enter email password"> <br>
+        <input type="submit" name="submit" value="Login">
     </form>
 </body>
 
