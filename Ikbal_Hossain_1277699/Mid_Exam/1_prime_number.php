@@ -32,8 +32,8 @@
     ?>
 
     <form action="" method="post">
-        <input type="number" name="myNum" placeholder="Enter a number">
-        <input type="submit" name="submit" value="Submit">
+        <input type="number" name="myNum" placeholder="Enter a number"> <br>
+        <input type="submit" name="submit" value="Prime Check">
     </form>
 </body>
 </html>
