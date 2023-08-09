@@ -26,6 +26,6 @@
 
     $max = max($students);
     $person = array_search($max, $students);
-    echo "$person get the muximum marks $max";
+    echo "$person get the maximum marks $max";
 
 ?>
