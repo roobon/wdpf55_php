@@ -18,7 +18,7 @@
             $errors = array();
             $limit = 404800; // 200kb;
             if($this->size>$limit){
-                $errors[] = "Upload failed. You can upload within 200KB size";
+                $errors[] = "Upload failed. You can upload within 400KB size";
             } 
 
             $allowedTypes = ["jpg", "png", "jpeg"];
