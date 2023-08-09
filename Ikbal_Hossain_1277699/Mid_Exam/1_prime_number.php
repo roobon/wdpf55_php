@@ -8,6 +8,7 @@
 <body>
     <?php
         if (isset($_REQUEST['submit'])) {
+            $myNum = $_POST['myNum'];
 
             function PrimeCheck($number){
                 if ($number == 0) {
@@ -26,7 +27,7 @@
                 }
             }
 
-            $myNum = $_REQUEST['myNum'];
+            
             echo PrimeCheck($myNum);
         }
     ?>
