@@ -7,6 +7,15 @@
 </head>
 <body>
 
+
+<h3>Check Prime </h3>
+    <form action="" method="post">
+        <input type="text" name="myNum" placeholder="Enter a Number"> <br>
+        <input type="submit" value="SUBMIT" name="submit" >
+
+    </form>
+
+
     <?php 
     if (isset( $_POST["submit"])) {   
        
@@ -34,11 +43,5 @@
     
     ?>
 
-
-    <form action="" method="post">
-        <input type="text" name="myNum" placeholder="Enter a Number"> <br>
-        <input type="submit" value="SUBMIT" name="submit" >
-
-    </form>
 </body>
 </html>
