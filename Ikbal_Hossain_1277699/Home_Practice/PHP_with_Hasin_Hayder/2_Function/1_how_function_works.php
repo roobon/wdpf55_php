@@ -1,12 +1,12 @@
 <?php 
     function evenOrOdd($n){
         if($n %2 == 0){
-            return true;
+            return "even number";
         } else {
-            return false;
+            return "odd number";
         }
     }
 
-    $x = 13;
+    $x = 12;
     evenOrOdd($x);
 ?>
