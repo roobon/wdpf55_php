@@ -59,7 +59,7 @@
 
 
 <?php 
-    function sum3($x, $y, int ...$numbers)  {
+    function sum3($x, $y, int ...$numbers)  {  // ...$numbers er por r kono parameter add kora jabe na
         echo "Summation of $x and $y is: " . ($x + $y) . "<br>";  // eikhane output 1 + 2 = 3 asbe. then $result er output show korbe.
        
         $result = 0;
@@ -72,7 +72,7 @@
         
     }
 
-    // echo "Sum of the numbers: " . sum2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-    echo "Sum of the numbers: " . sum3(1, 2);
+    echo "Sum of the numbers: " . sum3(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    
     echo "<hr>";
 ?>
