@@ -47,7 +47,7 @@
     }
 
     $x = 5;
-    echo "Factorial of {$x} is " . factorial($x);
+    echo "Factorial of {$x} is " . factorial3($x);
 
     echo "<hr>";
 ?>
