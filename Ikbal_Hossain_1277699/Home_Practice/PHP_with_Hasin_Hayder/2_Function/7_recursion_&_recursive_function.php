@@ -1,4 +1,5 @@
 <h3> Segment: 01 </h3>
+<!-- function name: recursive. and all activity is called recursion -->
 <?php 
     // recursive function call itself.
 
@@ -40,6 +41,7 @@
         }
         echo $counter . "<br>"; 
         $counter++;
+        
 
         printNumber($counter, $end);
 
