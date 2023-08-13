@@ -16,6 +16,7 @@
 ?>
 
 
+
 <h3> Segment: 02 </h3>
 <?php 
     function printM($i){
@@ -31,6 +32,7 @@
     printM(1);
     echo "<hr>";
 ?>
+
 
 
 <h3> Segment: 03 </h3>
@@ -50,6 +52,7 @@
     printNumber(21, 37);
     echo "<hr>";
 ?>
+
 
 
 <h3> Segment: 04 <h4>Most Important</h4></h3>
