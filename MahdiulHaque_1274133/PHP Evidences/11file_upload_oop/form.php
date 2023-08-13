@@ -16,8 +16,7 @@
       if(isset($_POST['submit'])){
          $photo = $_FILES['photo'];
          $obj = new FileClass($photo);
-        //  echo "<pre>";
-        //  print_r($obj);
+        
         $obj->doUpload();
 
       }

@@ -14,8 +14,27 @@ echo "<br>";
 echo $_SERVER["SERVER_ADMIN"];
 echo "<b>";
 echo $_SERVER["DOCUMENT_ROOT"];
-
+echo "<b>";
+echo $_SERVER["REQUEST_TIME"];
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <a href="superglobals.php? fName= Masum &District=Comilla& lName=Hossin& ID=12373758"> </a>
 <form action=""method="get">
     <input type="text"name="fName">

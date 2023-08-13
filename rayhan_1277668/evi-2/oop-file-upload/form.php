@@ -23,7 +23,6 @@
     <h3>Upload File</h3>
 <form action="" method="post" enctype="multipart/form-data">
 <input type="file" name="photo"> <br>
-
 <input type="submit" name="submit" value="Upload" >
 </form>
 

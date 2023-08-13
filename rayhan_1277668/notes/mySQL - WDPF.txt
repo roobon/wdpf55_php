@@ -3,4 +3,27 @@
 1. mysql -h localhost -u root -p
 2. show databases;
 3. create database wdpf_55;
-4.
+* show databases;
+
+
+CREATE TABLE user1 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    adddress VARCHAR(150)  NULL,
+    phone VARCHAR(20) NOT NULL,
+    dob DATE
+    )
+	ENGINE=INNODB ;
+
+
+========= Insert ============
+INSERT INTO users (id, name, address, phone, dob) VALUES (
+	NULL, 'Masum', 'Jatrabari', '0156541695', '1996-05-03'
+)
+
+
+
+========== select ===========
+SELECT * FROM user1;
+SELECT id, name, address, FROM user1;
+

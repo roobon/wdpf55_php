@@ -17,7 +17,7 @@ require_once('fileclass.php');
         $result->doUpload();
     }
     ?>
-    <form action="post" enctype="multipart/form-data">
+    <form action=""method="post" enctype="multipart/form-data">
 <input type="file"name="photo" placeholder="CHOOSE YOUR FILE"><br><br>
 <input type="submit" name="submit" value="UPLOAD">
 

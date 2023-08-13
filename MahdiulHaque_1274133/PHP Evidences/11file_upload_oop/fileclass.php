@@ -4,6 +4,7 @@
        public $name;
        public $size;
        public $tmpName;
+       public $ext;
 
       
       
@@ -16,20 +17,25 @@
             $this->name = $this->image['name'];
             $this->size = $this->image['size'];
             $this->tmpName = $this->image['tmp_name'];
+            $array = explode(".", $this->name);
+            $this->ext = end($array);
+
         
        }
 
-    //    public function checkData(){
-    //        echo "<pre>";
-    //        print_r($this->image);
-    //    }
+    
 
-      public function doUpload(){
+        public function doUpload(){
          $path = "uploads/";
          $errors = array();
-         $limit = 202400; // 200kb;
+         $limit = 404800;
          if($this->size>$limit){
-            $errors[] = "You can upload within 200KB size";
+            $errors[] = "Upload Failed. You can upload within 400KB size";
+         }
+
+         $allowedTypes = ["jpg", "png", "jpeg"];
+         if(!in_array($this->ext, $allowedTypes)){
+            $errors[] = "Upload failed. File must be jpg/jpeg/png";
          }
 
          if(empty($errors)){

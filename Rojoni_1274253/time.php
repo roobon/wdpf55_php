@@ -1,0 +1,12 @@
+<?php
+//ini_set("date.timezone","Asia/Dhaka");
+
+date_default_timezone_set("ASia/Dhaka");
+
+
+
+echo time(); 
+echo "<br>";
+echo date("d F,Y h:i:s");
+
+?>
