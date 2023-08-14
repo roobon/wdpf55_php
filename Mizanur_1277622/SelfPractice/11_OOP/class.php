@@ -1,22 +1,28 @@
 <?php 
 class Human{
     public $name;
-    function sayHi(){
-        echo "Hello! Human \n";
+    public $age;
+    function __construct($personName, $personAge=""){
+        
+        $this->name = $personName;
+        $this->age = $personAge;
     }
-    function getName(){
-        //oop 2nd video 8 min
+    function sayName(){
+        if($this->age){
+        echo "Hi from $this->name & Age is $this->age \n";
+        }else{
+        echo "Hi from $this->name & Age is unknown \n";
+        }
     }
 }
+$h1 = new Human("Mizanur Rahman", 25);
+$h1->sayName();
 
-class Cat{
-    function sayHi(){
-        echo "Mew from Cat";
-    }
-}
-$human = new Human();
-$human->name = "Mizanur Rahman";
-$cat = new Cat();
-$human->sayHi();
-$cat->sayHi();
+$h2 = new Human("Mehedi Hasan", 30);
+$h2->sayName();
+
+$h3 = new Human("Sadid");
+$h3->sayName();
+
+
 ?>
