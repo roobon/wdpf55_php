@@ -12,6 +12,7 @@
 ?>
 
 
+
 <h4>2. Beginning concept of Static Variable </h4>
 <?php 
     function doSomething1(){
@@ -24,6 +25,7 @@
     doSomething1();
     doSomething1();
 ?>
+
 
 
 <h4>3. concept of Static Variable </h4>
@@ -41,6 +43,7 @@
     ?>
 
 
+
 <h4>4. concept of Static Variable </h4>
 <?php 
     function doSomething3(){
@@ -55,6 +58,7 @@
     doSomething3();
     doSomething3();
     ?>
+
 
 
 <h4>5. concept of Static Variable </h4>
