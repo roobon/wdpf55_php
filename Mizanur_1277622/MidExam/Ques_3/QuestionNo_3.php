@@ -1,4 +1,4 @@
-<?php include_once("FileClass.php")?>
+<?php include_once("Class.php")?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +19,7 @@
     ?>
     <div class="container">
     <h2>Upload Your File</h2>
-    <form action="" method="post" class="form-control" enctype="multipart/form-data">
+    <form action="" method="post" class="form-control" enctype="multipart/form-control">
         <input type="file" class="form-control" name="file"><br>
         <input type="submit" class="btn btn-primary" name="submit" value="Submit">
     </form>
