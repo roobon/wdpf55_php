@@ -1,61 +1,86 @@
 <?php 
-// class Member{
-//     public $username="";
-//     private $loggedIN=false;
-//     public function login(){
-//         $this->loggedIN=true;}
-//         public function logout(){
-//             $this->loggedIN=false;
-//         }
-//         public function isLoggedIn(){
-//             return $this->loggedIN;
-//         }
-    
-// }
-// class administrator extends Member{
-//     function createForum($forumName){
-//         echo "$this->username create a forum:$forumName";
+// class information {
+//     public $username = "";
+//     private $loggedIN = false;
+
+//     public function login() {
+//         $this->loggedIN = true;
 //     }
-//     function extravalue($member){
-//         echo "$this->username extra member:$member->username";
+
+//     public function logout() {
+//         $this->loggedIN = false;
+//     }
+
+//     public function isLoggedIn() {
+//         return $this->loggedIN;
 //     }
 // }
-// $member = new Member();
-// $member->username="Khayrul Alam Rayan";
+
+// class Administrator extends information {
+//    public $district ="";
+//     public $country="";
+//     function createForum($forumName) {
+//         echo "$this->username creates a forum: $forumName";
+//     }
+
+//     function extravalue($member) {
+//         echo "$this->username extra member: $member->username";
+//     }
+// }
+
+// $member = new information();
+// $member->username ="Khayrul Alam Rayan";
 // $member->login();
-// echo $member->username."is".($member->isLoggedIn())?"loggedIN":"loggedout"."<br>";
+// echo $member->username ." is ". ($member->isLoggedIn()?"login":"logout")."<br>";
+// $admin = new Administrator();
+// $admin->username="Mizanur Rahman";
+// $admin->district="Maymanisng";
+// $admin->country="Bangladesh";
+// $admin->logout();
+// echo $admin->username."is And His Country Name is ".$admin->country." And His District Name is ". $admin->district ." He is logout from website ".($admin->isLoggedIN()?" login ":" logout ")."<br>";
+// $admin->extravalue($member)."<br>";
+// $admin->createForum("W3schoool.com")
 
- 
-class information {
-    public $username = "";
-    private $loggedIN = false;
-
-    public function login() {
-        $this->loggedIN = true;
-    }
-
-    public function logout() {
-        $this->loggedIN = false;
-    }
-
-    public function isLoggedIn() {
-        return $this->loggedIN;
+class Member{
+    protected $isLoggedIN =false;
+    protected $role;
+    protected $users=[
+        ["username"=>"abc","password"=>"xyz","role"=>"subcribers"],
+        ["username"=>"cba","password"=>"yxz","role"=>"admin"],
+        ["username"=>"acb","password"=>"zyx","role"=>"super_admin"],
+    ];
+    public function Login($user,$pass){
+        foreach($this->users as $user_info){
+            extract($user_info);
+            if($username==$user && $password==$pass){
+                $this->isLoggedIN=true;
+                $this->role=$role;
+            }
+        }
     }
 }
-
-class Administrator extends information {
-    function createForum($forumName) {
-        echo "$this->username creates a forum: $forumName";
-    }
-
-    function extravalue($member) {
-        echo "$this->username extra member: $member->username";
+class role extends Member{
+    public function __construct($user,$pass)
+    {
+     $this->Login($user,$pass);  
+     if($this->isLoggedIN){
+        if($this->role=='subcribers'){
+            echo "You are logged in as a subcribers";
+        }
+        if($this->role=='admin'){
+            echo "you are logged in as a admin";
+        }
+        if($this->role=='super_admin'){
+            echo "you are logged in as a super admin";
+        }
+     }
+     else{
+        echo "invalid username/password";
+     }
     }
 }
+$loggedIN = new role("abc","abe");
 
-$member = new information();
-$member->username = "Khayrul Alam Rayan";
-$member->login();
 
-echo $member->username . " is " . ($member->isLoggedIn() ? "logged in" : "logged out") . "<br>";
+
 ?>
