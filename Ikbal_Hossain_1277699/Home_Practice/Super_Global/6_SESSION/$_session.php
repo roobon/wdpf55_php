@@ -3,7 +3,8 @@
 
 <?php 
     session_start();
-    echo session_id();
+
+    echo session_id(); // when you close the browser the session id will be different
     $_SESSION["ID"] = 10;
     $_SESSION["name"] = "Ikbal Hossain";
 
