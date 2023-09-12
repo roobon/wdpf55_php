@@ -1,4 +1,6 @@
-<?php 
+<?php
+if (isset($_POST['submit'])) {
     echo "Name: " . $_POST['ename'];
-    echo "Number: " . $_POST['mobile'];
+    echo "<br> Number: " . $_POST['mobile'];
+}
 ?>
