@@ -9,16 +9,15 @@
 </head>
 
 <body>
-    <form class="container mt-4 w-25">
+    <form class="container mt-5 w-25" method="POST" action="validate.php">
         <div class="mb-3">
             <label for="" class="form-label"><b>Email address</b></label>
-            <input type="email" class="form-control" name="email" placeholder="Enter your email">
-
+            <input type="email" class="form-control" name="email">
         </div>
 
         <div class="mb-3">
             <label for="" class="form-label"><b>Password</b></label>
-            <input type="password" class="form-control">
+            <input type="password" class="form-control" name="password">
         </div>
 
         <div class="mb-3 form-check">
@@ -28,7 +27,7 @@
 
         <button type="submit" class="btn btn-primary" name="login">Login</button>
     </form>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
