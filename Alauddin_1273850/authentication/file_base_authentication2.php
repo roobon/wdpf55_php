@@ -1,9 +1,9 @@
 <?php 
-    //echo hash('md5', 'abcd'); //sha1, md5
+    //echo hash('md5', 'masud'); //sha1, md5
 
-    $secret = 'e2fc714c4727ee9395f324cd2e7f331f';
+    $secret = '266742ad7c319c03dac609047486ddcc';
     if (($_SERVER['PHP_AUTH_USER'] != 'client') ||
-    (hash('sha1', $_SERVER['PHP_AUTH_PW']) != $secret)) {
+    (hash('md5', $_SERVER['PHP_AUTH_PW']) != $secret)) {
     header('WWW-Authenticate: Basic Realm="Secret Stash"');
     header('HTTP/1.0 401 Unauthorized');
     print('You must provide the proper credentials!');
