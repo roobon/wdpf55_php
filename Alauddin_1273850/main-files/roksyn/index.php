@@ -52,7 +52,7 @@
                   <div class="form-body mt-4" >
                   <?php 
                     
-                    if (isset($_SESSION['msg'])) {
+                    if (isset($_SESSION['email'])) {
                         echo $_SESSION['msg'];
                         
                     }
