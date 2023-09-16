@@ -23,17 +23,14 @@
         
        }
 
-    //    public function checkData(){
-    //        echo "<pre>";
-    //        print_r($this->image);
-    //    }
+    
 
         public function doUpload(){
          $path = "uploads/";
          $errors = array();
-         $limit = 404800; // 200kb;
+         $limit = 404800;
          if($this->size>$limit){
-            $errors[] = "Upload Failed. You can upload within 200KB size";
+            $errors[] = "Upload Failed. You can upload within 400KB size";
          }
 
          $allowedTypes = ["jpg", "png", "jpeg"];

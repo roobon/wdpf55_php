@@ -15,7 +15,7 @@
    <?php
    if(isset($_REQUEST["submit"])){
     $my number = $_REQUEST["number"];
-                                           //dekhte hobe
+                                        //    dekhte hobe sirer ta 
 
     function checkPrime($number)
     if($number == 0){
