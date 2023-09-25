@@ -3,7 +3,7 @@
 
     if(isset($_POST['submit'])) :
         extract($_POST);
-        //$password = sha1($password);
+        //$password = sha1($password);t4342++++++++3        322`1`1 32`11   3   2` 32`11
 
         $sql = "SELECT name, email, password FROM users WHERE email='$email' AND password = '$password' ";
         $result = $db->query($sql);
