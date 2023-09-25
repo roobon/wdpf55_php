@@ -52,10 +52,16 @@
                   <div class="form-body mt-4" >
                   <?php 
                     
+<<<<<<< HEAD
                     if (isset($_SESSION['email'])) {
                         echo $_SESSION['msg'];
                         unset($_SESSION['msg']);
                         
+=======
+                    if (isset($_SESSION['error_msg'])) {
+                        echo $_SESSION['error_msg'];
+                        unset($_SESSION['error_msg']) ;
+>>>>>>> 3c760f5024c7c7fb571635253cec64d38d46eb55
                     }
                     ?>
 										<form class="row g-3" action="login.php" method="post">
